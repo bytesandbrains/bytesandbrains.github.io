@@ -15,7 +15,7 @@ import 'typeface-source-sans-pro'
 
 import { IntlContext, createIntl, addLocaleData } from './src/intl/main.js'
 
-import './src/components/index.scss'
+import './src/styles/index.scss'
 
 addLocaleData([...locale_en, ...locale_da])
 const messages = {

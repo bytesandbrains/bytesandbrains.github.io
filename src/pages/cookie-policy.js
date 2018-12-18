@@ -5,7 +5,7 @@ import Consent from '../components/consent.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
 
-import styles from './cookie-policy.module.css'
+import styles from '../styles/cookie-policy.module.css'
 
 export default props => {
   const intl = useIntl()

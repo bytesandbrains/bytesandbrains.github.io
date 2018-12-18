@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { useIntl, FormattedMessage } from '../intl/main.js'
-import whatWeDoBody from '../data/WhatWeDoBodyText.js'
+import whatWeDoBody from '../data/what-we-do.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
 
-import commonStyles from '../components/common.module.css'
-import styles from './what-we-do.module.css'
+import commonStyles from '../styles/common.module.css'
+import styles from '../styles/what-we-do.module.css'
 
 function WhatWeDoData(props) {
   const IconLeft = props.iconLeft

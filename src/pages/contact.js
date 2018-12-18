@@ -3,7 +3,7 @@ import { useIntl, FormattedMessage } from '../intl/main.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
 
-import styles from './contact.module.css'
+import styles from '../styles/contact.module.css'
 
 const Contact = props => {
   const intl = useIntl()

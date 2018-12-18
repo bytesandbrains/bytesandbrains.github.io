@@ -3,7 +3,7 @@ import { useIntl, FormattedMessage } from '../intl/main.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-import styles from './404.module.css'
+import styles from '../styles/404.module.css'
 
 function NotFoundPage() {
   const intl = useIntl()

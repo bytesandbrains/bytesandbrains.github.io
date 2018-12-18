@@ -14,7 +14,7 @@ import TetraPak from '../images/logos/TetraPak.png'
 import Scandi from '../images/logos/ScandiLogo.png'
 import Odense from '../images/logos/OdenseHospital.jpg'
 
-import styles from './index.module.css'
+import styles from '../styles/index.module.css'
 
 const Home = props => {
   const intl = useIntl()

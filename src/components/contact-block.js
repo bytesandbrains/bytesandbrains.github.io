@@ -1,8 +1,8 @@
 import React from 'react'
 import { FormattedMessage } from '../intl/main.js'
 import { Link } from 'gatsby'
-import styles from './contact-block.module.css'
-import commonStyles from './common.module.css'
+import styles from '../styles/contact-block.module.css'
+import commonStyles from '../styles/common.module.css'
 
 export default () => {
   return (

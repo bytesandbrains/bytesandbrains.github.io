@@ -16,7 +16,7 @@ a {
   align-items: center;
 }
 
-.text-header {
+.textHeader {
   align-items: center;
   display: flex;
   width: 100%;
@@ -26,60 +26,70 @@ a {
   fill: var(--senary-color);
   display: flex;
 }
-.logo-headline {
+.logoHeadline {
   font-size: 2.25rem;
   font-weight: 400;
   line-height: 1.25;
   white-space: nowrap;
   padding-left: 0.5em;
 }
-.logo-header:hover {
+.logoHeader:hover {
   text-decoration: none;
 }
-.side-links {
+.sideLinks,
+.responsiveSideLinks {
   width: 100%;
   margin: 0;
   display: flex;
   justify-content: flex-end;
 }
 
-.links-header {
+.linksHeader {
   display: block;
   font-size: 0.7em;
   white-space: nowrap;
 }
 
-.links-header + .links-header {
+.linksHeader + .linksHeader {
   margin-left: 2em;
 }
 
 /* Header burgermenu dropdown*/
-.burger-menu-icon {
+.burgerIcon {
+  line-height: 0;
+  background: transparent;
   display: none;
+  color: var(--gold-color);
+  padding: 0.5rem;
+  font-size: 2em;
+  margin-right: 0.8rem;
+  border: 3px solid #d1d6de;
+  border-radius: 50%;
 }
 @media screen and (max-width: 600px) {
-  .links-header {
+  .linksHeader {
     display: none;
   }
-  .burger-menu-icon {
+  .linksHeader + .linksHeader {
+    margin-left: 74%;
+  }
+  .burgerIcon {
     float: right;
     display: block;
   }
-  i.material-icons.burger-menu-icon {
+  .burgerIcon {
     position: absolute;
     right: 10px;
     top: 10px;
   }
-  .side-links.responsive {
+  .responsiveSideLinks {
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 15px;
     top: 69px;
   }
-  .side-links a.icon {
-  }
-  .side-links.responsive a {
+  .responsiveSideLinks a {
     display: block;
     text-align: right;
     border: 3px solid #d1d6de;
@@ -90,10 +100,10 @@ a {
     background-color: var(--primary-color);
     color: var(--gold-color);
   }
-  .responsive {
+  .responsiveSideLinks {
     display: block;
   }
-  .logo-headline {
+  .logoHeadline {
     font-size: 1.8rem;
   }
 }
@@ -104,15 +114,15 @@ a {
   --duration: 0.5s;
 }
 
-#logo-svg {
+.logo {
   animation: grow calc(2 * var(--duration)) forwards;
 }
-#logo-svg .left {
+.logo path:first-of-type {
   transform: translateX(var(--offset));
   animation: left var(--duration) forwards;
   animation-delay: var(--duration);
 }
-#logo-svg .right {
+.logo path:nth-of-type(2) {
   transform: translateX(calc(-1 * var(--offset)));
   animation: right var(--duration) forwards;
   animation-delay: var(--duration);

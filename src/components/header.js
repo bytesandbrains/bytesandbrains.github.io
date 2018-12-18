@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FormattedMessage } from '../intl/main.js'
 import { Link } from 'gatsby'
 import Logo from '../images/svg/Logo.svg'
-import './header.css'
+import styles from '../styles/header.module.css'
 import { MdMenu } from 'react-icons/md'
 
 let HACKY_LOGO_REPLAY_COUNTER = 1
@@ -12,21 +12,25 @@ export default () => {
   const toggleBurgerMenu = () => setBurgerState(!burgerState)
   return (
     <div>
-      <div className="header">
-        <Link className="logo-picture" to="/">
-          <Logo key={HACKY_LOGO_REPLAY_COUNTER++} className="logo" />
+      <div className={styles.header}>
+        <Link className={styles.logoPicture} to="/">
+          <Logo key={HACKY_LOGO_REPLAY_COUNTER++} className={styles.logo} />
         </Link>
-        <div className="text-header">
-          <Link className="logo-headline" to="/">
+        <div className={styles.textHeader}>
+          <Link className={styles.logoHeadline} to="/">
             <span>Bytes & Brains</span>
           </Link>
-          <a href="#" className="icon" onClick={toggleBurgerMenu}>
-            <MdMenu className="material-icons burger-menu-icon" />
-          </a>
-          <h2 className={`side-links ${burgerState && 'responsive'}`}>
+          <button className={styles.burgerIcon} onClick={toggleBurgerMenu}>
+            <MdMenu />
+          </button>
+          <h2
+            className={
+              burgerState ? styles.sideLinks : styles.responsiveSideLinks
+            }
+          >
             <Link
               to="/what-we-do"
-              className="links-header"
+              className={styles.linksHeader}
               id="whatWeDoLink"
               onClick={toggleBurgerMenu}
             >
@@ -34,7 +38,7 @@ export default () => {
             </Link>
             <Link
               to="/who-we-are"
-              className="links-header"
+              className={styles.linksHeader}
               id="whoweare"
               onClick={toggleBurgerMenu}
             >
@@ -42,7 +46,7 @@ export default () => {
             </Link>
             <Link
               to="/contact"
-              className="links-header"
+              className={styles.linksHeader}
               id="contact"
               onClick={toggleBurgerMenu}
             >

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FormattedMessage } from '../intl/main.js'
-import styles from './footer.module.css'
+import styles from '../styles/footer.module.css'
 
 export default () => {
   return (

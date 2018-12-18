@@ -2,7 +2,7 @@ import React from 'react'
 import { FormattedMessage } from '../intl/main.js'
 import { useConsent } from '../hooks/consent.js'
 import { Link } from 'gatsby'
-import styles from './cookie-consent.module.css'
+import styles from '../styles/cookie-consent.module.css'
 
 export default () => {
   const [consent, toggleConsent] = useConsent()

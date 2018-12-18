@@ -6,7 +6,7 @@ import ContactBlock from '../components/contact-block.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo.js'
 
-import styles from './who-we-are.module.css'
+import styles from '../styles/who-we-are.module.css'
 
 function Person(props) {
   const name = props.name
