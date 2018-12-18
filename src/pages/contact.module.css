@@ -1,0 +1,58 @@
+.outer {
+  padding-top: 10.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-weight: 300 !important;
+  padding-bottom: 2%;
+}
+
+.outer p {
+  color: var(--white-color);
+}
+
+.outer form {
+  max-width: 700px;
+  width: 80%;
+  margin: auto;
+}
+
+.outer button {
+  background: transparent;
+  color: var(--gold-color);
+  border: 3px solid var(--gold-color);
+  border-radius: 50px;
+  line-height: 1.5;
+  font-size: 136%;
+  cursor: pointer;
+}
+
+.inputSection {
+  display: flex;
+  justify-content: center;
+}
+.inputSection + .inputSection {
+  margin-top: 1rem;
+}
+.inputSection label {
+  width: 30%;
+}
+.inputSection input,
+.inputSection textarea {
+  border: none;
+  background-color: var(--dark-grey-color);
+  padding: 0.5em 1em;
+}
+.inputSection input,
+.inputSection textarea,
+.inputSection button {
+  flex: 1;
+}
+
+.headline {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}

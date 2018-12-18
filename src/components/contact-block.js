@@ -1,0 +1,20 @@
+import React from 'react'
+import { FormattedMessage } from '../intl/main.js'
+import { Link } from 'gatsby'
+import styles from './contact-block.module.css'
+import commonStyles from './common.module.css'
+
+export default () => {
+  return (
+    <div className={styles.wrapper}>
+      <div className={styles.inner}>
+        <h1 className={styles.headline}>
+          <FormattedMessage id="Footer.frontpage.headline" />
+        </h1>
+        <Link className={commonStyles.button} to="/contact">
+          <FormattedMessage id="Footer.frontpage.button" />
+        </Link>
+      </div>
+    </div>
+  )
+}

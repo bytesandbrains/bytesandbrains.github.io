@@ -1,0 +1,14 @@
+.notFound {
+  padding-top: 10.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  font-weight: 300 !important;
+  padding-bottom: 2%;
+}
+.headline {
+  font-size: 3em;
+}

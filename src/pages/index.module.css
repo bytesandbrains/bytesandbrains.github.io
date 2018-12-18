@@ -1,0 +1,332 @@
+.headlineWrapper {
+  position: relative;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 100%;
+  height: 40rem;
+}
+.headline {
+  padding-top: 200px;
+  margin: 0px 0% 15% 10%;
+}
+.headlineOverskrift {
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 1.5em;
+}
+.headlineText {
+  margin-bottom: 1.5em;
+}
+.typedText {
+  color: var(--gold-color);
+}
+.pitch::before {
+  transform: skewY(-5deg);
+  transform-origin: left top;
+  position: absolute;
+  top: -1.5rem;
+  z-index: -1;
+  content: '';
+  width: 100%;
+  height: 150%;
+  background-color: var(--white-color);
+}
+.pitchText {
+  z-index: 2;
+  position: relative;
+  padding-bottom: 2.5rem;
+  margin-left: 10%;
+  flex-grow: 2;
+  display: flex;
+  color: var(--primary-color);
+  padding-right: 50%;
+}
+.pitch {
+  z-index: 2;
+  position: relative;
+  padding-bottom: 15px;
+}
+.checklist {
+  padding-bottom: 5px;
+}
+.checklist a {
+  color: var(--primary-color);
+  border-bottom: 1px dashed #abb3c1;
+}
+.button,
+.checklistButton {
+  border: 3px solid var(--tertiary-color);
+  border-radius: 1.5em;
+  padding: 0.75em;
+  color: white;
+}
+.button:hover {
+  border: 5px solid var(--tertiary-color);
+}
+.checklistButton {
+  color: var(--primary-color);
+  font-weight: 400;
+  border: 3px solid var(--tertiary-color);
+}
+.checklistButton:hover {
+  border: 5px solid var(--tertiary-color);
+}
+.whatWeDoWrapper {
+  position: relative;
+
+  z-index: 2;
+  margin-top: 100px;
+}
+.whatWeDoWrapper::before {
+  transform: skewY(-5deg);
+  transform-origin: center;
+  box-shadow: 0 4px 0 var(--dark-grey-color), 0 -4px 0 var(--dark-grey-color);
+  content: '';
+  position: absolute;
+  top: -17%;
+  left: 0;
+  width: 100%;
+  height: 140%;
+  background-color: var(--grey-color);
+  z-index: -1;
+}
+@media screen and (min-width: 1700px) {
+  .whatWeDoWrapper::before {
+    top: -40%;
+    height: 165%;
+  }
+}
+@media screen and (min-width: 2200px) {
+  .whatWeDoWrapper::before {
+    transform: skewY(-3deg);
+    transform-origin: center;
+    top: -40%;
+    height: 165%;
+  }
+}
+.whatWeDo {
+  z-index: 1;
+  display: flex;
+  flex-direction: var(--flex-test);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.whatWeDoStepWrapper {
+  width: 33.3333%;
+  margin-left: 2em;
+}
+.whatWeDoStep {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  align-items: center;
+  width: 100%;
+}
+.whatWeDoStepHeadline {
+  margin: 0;
+  color: var(--tertiary-color);
+}
+.whatWeDoStepText {
+  grid-column: 2;
+  color: black;
+}
+.trustedWrapper {
+  position: relative;
+  z-index: 3;
+}
+.trustedWrapper::before {
+  transform: skewY(-5deg);
+  transform-origin: left top;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  top: 35%;
+  left: 0;
+  background-color: var(--white-color);
+}
+@media screen and (min-width: 2200px) {
+  .trustedWrapper::before {
+    transform: skewY(-3deg);
+  }
+}
+.trusted {
+  margin: auto 5%;
+  padding-top: 12%;
+  margin-top: -1%;
+}
+.trustedHeader {
+  color: var(--primary-color);
+  font-size: 30px;
+}
+.trustedHeaderText {
+  font-weight: 300;
+}
+.trustedFirms {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto -1%;
+}
+.logoTetraPak,
+.logoScandi,
+.logoFrederiksberg,
+.logoOdense,
+.logoRoskilde {
+  margin: 15px;
+}
+.logoScandi {
+  padding: 15px;
+  padding-top: 20px;
+  background-color: white;
+}
+.logoFrederiksberg {
+  background-color: white;
+}
+.trustedAndMore {
+  font-size: 24px;
+  text-align: right;
+  color: var(--primary-color);
+  padding-top: 30px;
+}
+.customersWrapper {
+  background-color: var(--secondary-color);
+}
+.customersHeadline {
+  margin-left: 10%;
+  padding-top: 10%;
+  color: var(--primary-color);
+}
+.hiringWrapper::after {
+  transform: skewY(5deg);
+  transform-origin: left top;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: var(--grey-color);
+}
+.hiringWrapper {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+  color: var(--primary-color);
+  text-align: right;
+  padding-right: 20%;
+  line-height: 2em;
+}
+.hiring {
+  margin-left: 10%;
+  padding-top: 13%;
+  padding-bottom: 5%;
+}
+.hiring p {
+  color: var(--primary-color);
+}
+/*icons*/
+.icon {
+  color: var(--gold-color);
+  padding: 0.5rem;
+  font-size: 3em;
+  margin-right: 0.8rem;
+  border: 3px solid #d1d6de;
+  border-radius: 50%;
+}
+/*Billeder*/
+.computer {
+  position: absolute;
+  margin-top: -190px;
+  z-index: -1;
+  right: 4em;
+  top: 0em;
+}
+.trustedFirms > * {
+  flex: 1;
+}
+.trustedFirms img {
+  min-width: 150px;
+  width: 95%;
+}
+
+/*media query*/
+
+/*1200px*/
+@media screen and (max-width: 1200px) {
+  .Computer {
+    right: 1em;
+    top: -1em;
+  }
+}
+/*ipad*/
+@media screen and (max-width: 800px) {
+  .computer {
+    right: 4em;
+    top: -6em;
+    width: 70%;
+  }
+  .pitchText {
+    padding-right: 20%;
+  }
+  .whatWeDoStepWrapper {
+    width: auto;
+    margin-bottom: 5%;
+    margin-left: auto;
+  }
+  .whatWeDoWrapper:before {
+    height: 120%;
+  }
+  .trustedFirms {
+    flex-wrap: wrap;
+  }
+  .trustedWrapper:before {
+    height: auto;
+  }
+  .hiringWrapper {
+    padding-right: 10%;
+  }
+  .hiring h3 {
+    margin-top: 15px;
+    font-weight: 400;
+  }
+}
+
+/*telefon*/
+@media screen and (max-width: 600px) {
+  /*Headline - after header - before pitch*/
+  .eadlineWrapper {
+    height: 33rem;
+  }
+  .headline {
+    padding-top: 150px;
+  }
+  /*pitch*/
+  .computer {
+    display: none;
+  }
+  .pitchText {
+    padding-right: 10%;
+  }
+  .whatWeDoWrapper:before {
+    top: -10%;
+  }
+  .trusted {
+    padding-top: 0;
+    margin-top: 30%;
+  }
+  .trustedWrapper:before {
+    height: auto;
+  }
+
+  .footer {
+    margin-left: 0px;
+    text-align: center;
+  }
+}

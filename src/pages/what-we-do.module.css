@@ -1,0 +1,157 @@
+.outer {
+  background-color: var(--primary-color);
+  padding-top: 15em;
+  color: var(--white-color);
+  text-align: center;
+}
+.outer p {
+  margin: 0;
+}
+.outer p {
+  color: var(--white-color);
+}
+.headline {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 4em;
+}
+.headline_weTransform {
+  padding-bottom: 0.5em;
+}
+
+.techLogoLeft1,
+.techLogoLeft2,
+.techLogoLeft3,
+.techLogoLeft4,
+.techLogoRight1,
+.techLogoRight2,
+.techLogoRight3,
+.techLogoRight4 {
+  width: 2.5em;
+  padding-top: 10px;
+  box-sizing: content-box;
+}
+
+.techLogoLeft1,
+.techLogoLeft2,
+.techLogoLeft3,
+.techLogoLeft4 {
+  margin-right: 1em;
+}
+
+.techLogoRight1 {
+  grid-column: 3;
+  padding-left: 1em;
+}
+.techLogoRight2 {
+  grid-column: 4;
+  padding-left: 1em;
+}
+.techLogoRight3 {
+  grid-column: 5;
+  padding-left: 1em;
+}
+.techLogoRight4 {
+  grid-column: 6;
+  padding-left: 1em;
+}
+.techLogoLeft1 {
+  grid-column: 2;
+}
+.textBodyLeft {
+  grid-column: 2 / span 5;
+  padding-top: 0.6em;
+}
+.textBodyRight {
+  grid-column: 2 / span 5;
+  padding-top: 0.6em;
+}
+.headlineIcon,
+.headlineIconRight {
+  color: var(--gold-color);
+  padding: 0.5rem;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+.headlineIconRight {
+  grid-column: 7;
+}
+.keywordsLeft {
+  grid-row: 3;
+  grid-column: 2 / span 5;
+}
+.keywordsRight {
+  grid-row: 3;
+  grid-column: 1 / span 6;
+}
+.keywordsLeft,
+.keywordsRight {
+  padding-top: 0.6em;
+}
+.textLeft {
+  text-align: left;
+  padding-bottom: 5em;
+  display: grid;
+  grid-template-columns: 10% auto auto auto auto auto auto auto;
+  padding-left: 20%;
+  padding-right: 40%;
+  justify-content: start;
+  align-items: center;
+}
+.textLeftHeadline {
+  margin-left: 0;
+  grid-column: 2 / span 5;
+}
+.textRightHeadline {
+  margin-right: 0;
+  grid-column: 2 / span 5;
+}
+.textRight {
+  text-align: right;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto 10%;
+  padding-bottom: 5em;
+  padding-left: 40%;
+  padding-right: 20%;
+  align-items: center;
+  justify-items: end;
+}
+.talks {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.button {
+  padding-top: 5em;
+}
+/*media query*/
+/*Ipad*/
+@media screen and (max-width: 800px) {
+  .textLeft {
+    padding-left: 10%;
+  }
+  .textRight {
+    padding-right: 10%;
+  }
+}
+/*telefon*/
+@media screen and (max-width: 500px) {
+  .outer {
+    padding-top: 10em;
+  }
+  .textLeft {
+    padding-right: 10%;
+  }
+  .textRight {
+    padding-left: 10%;
+  }
+  .talks {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .headline {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

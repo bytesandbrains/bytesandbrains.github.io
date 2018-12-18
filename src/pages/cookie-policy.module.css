@@ -1,0 +1,18 @@
+.wrapper {
+  background-color: var(--primary-color);
+  padding-top: 150px;
+  padding-left: 10%;
+  padding-right: 5%;
+}
+.wrapper p h1 ul li {
+  color: var(--secondary-color);
+}
+.text {
+  color: var(--secondary-color);
+}
+.headlines {
+  padding-top: 15px;
+}
+.contact * {
+  margin: auto;
+}
