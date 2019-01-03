@@ -1,16 +1,22 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
-let listeners = [];
+let listeners = []
 const writeConsent = value => {
+  if (typeof window == 'undefined') return
+
   localStorage.setItem('consent', JSON.stringify(value))
-  window['ga-disable-UA-115579130-1'] = !value;
-  listeners.forEach(cb => cb());
-};
-const readConsent = () => JSON.parse(localStorage.getItem('consent'));
+  window['ga-disable-UA-115579130-1'] = !value
+  listeners.forEach(cb => cb())
+}
+const readConsent = () => {
+  if (typeof window == 'undefined') return ''
+
+  return JSON.parse(localStorage.getItem('consent'))
+}
 
 export function useConsent() {
-  const [consent, setConsent] = useState(readConsent());
-  const updateConsent = () => setConsent(readConsent());
+  const [consent, setConsent] = useState(readConsent())
+  const updateConsent = () => setConsent(readConsent())
   useEffect(() => {
     listeners.push(updateConsent)
     window.addEventListener('storage', updateConsent)
@@ -21,9 +27,9 @@ export function useConsent() {
   })
 
   function toggleConsent() {
-    writeConsent(!consent);
-    updateConsent();
+    writeConsent(!consent)
+    updateConsent()
   }
 
-  return [consent, toggleConsent];
+  return [consent, toggleConsent]
 }
