@@ -29,6 +29,14 @@ export default () => {
             }
           >
             <Link
+              to="/blog"
+              className={styles.linksHeader}
+              id="blogLink"
+              onClick={toggleBurgerMenu}
+            >
+              <FormattedMessage id="Header.blog" />
+            </Link>
+            <Link
               to="/what-we-do"
               className={styles.linksHeader}
               id="whatWeDoLink"
