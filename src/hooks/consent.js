@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react'
 
 let listeners = []
 const writeConsent = value => {
-  if (typeof window == 'undefined') return
+  if (typeof window === 'undefined') return
 
   localStorage.setItem('consent', JSON.stringify(value))
   window['ga-disable-UA-115579130-1'] = !value
   listeners.forEach(cb => cb())
 }
 const readConsent = () => {
-  if (typeof window == 'undefined') return ''
+  if (typeof window === 'undefined') return ''
 
   return JSON.parse(localStorage.getItem('consent'))
 }
