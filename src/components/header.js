@@ -28,14 +28,14 @@ export default () => {
               burgerState ? styles.sideLinks : styles.responsiveSideLinks
             }
           >
-            <Link
+            {/*<Link
               to="/blog"
               className={styles.linksHeader}
               id="blogLink"
               onClick={toggleBurgerMenu}
             >
               <FormattedMessage id="Header.blog" />
-            </Link>
+            </Link>*/}
             <Link
               to="/what-we-do"
               className={styles.linksHeader}
