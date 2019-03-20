@@ -30,7 +30,18 @@ const Home = props => {
     loop: true,
     backSpeed: 30,
   })
-
+  function handleReadmore() {
+    gtag('event', 'click_read_more', {
+      event_category: 'Button',
+      event_label: 'read_more',
+    })
+  }
+  function handleFreeConsultation() {
+    gtag('event', 'click_free_consultation', {
+      event_category: 'Button',
+      event_label: 'free_consultation',
+    })
+  }
   return (
     <Layout>
       <SEO
@@ -53,7 +64,11 @@ const Home = props => {
                 <span ref={textRef} className={styles.typedText} />
               </h2>
             </div>
-            <Link to="/what-we-do" className={styles.button}>
+            <Link
+              to="/what-we-do"
+              className={styles.button}
+              onClick={handleReadmore}
+            >
               <FormattedMessage id="Read.more.button.one" />
             </Link>
           </div>
@@ -90,7 +105,11 @@ const Home = props => {
                     <FormattedMessage id="Checklist.punkt.tre" />
                   </li>
                 </ul>
-                <Link to="/contact" className={styles.checklistButton}>
+                <Link
+                  to="/contact"
+                  className={styles.checklistButton}
+                  onClick={handleFreeConsultation}
+                >
                   <FormattedMessage id="Checklist.button" />
                 </Link>
               </div>

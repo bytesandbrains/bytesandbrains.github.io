@@ -7,7 +7,12 @@ import styles from '../styles/contact.module.css'
 
 const Contact = props => {
   const intl = useIntl()
-
+  function handleSubmit() {
+    gtag('event', 'click_submit_contact_form', {
+      event_category: 'Contact form',
+      event_label: 'send_contact_form',
+    })
+  }
   return (
     <Layout>
       <SEO
@@ -28,6 +33,7 @@ const Contact = props => {
           <form
             action="https://formspree.io/hello@bytesandbrains.com"
             method="POST"
+            onSubmit={handleSubmit}
           >
             <div className={styles.inputSection}>
               <input
