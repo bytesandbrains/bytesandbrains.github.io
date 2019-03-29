@@ -1,13 +1,13 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'gatsby'
-import Slider from 'react-slick'
 import useTyped from '../hooks/typed.js'
 import { useIntl, FormattedMessage } from '../intl/main.js'
 import whatWeDoBody from '../data/what-we-do.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+
+import Carousel from '@brainhubeu/react-carousel'
+import '@brainhubeu/react-carousel/lib/style.css'
 
 import commonStyles from '../styles/common.module.css'
 import styles from '../styles/what-we-do.module.css'
@@ -119,6 +119,10 @@ function WhatWeDo(props) {
   const intl = useIntl()
 
   const textRef = useRef()
+  const CAROUSEL_SIZE = 3
+  const [carousel, setCarousel] = useState(0)
+  const back = () => setCarousel(x => (CAROUSEL_SIZE + x - 1) % CAROUSEL_SIZE)
+  const forward = () => setCarousel(x => (x + 1) % CAROUSEL_SIZE)
 
   useTyped(textRef, {
     strings: [
@@ -130,13 +134,6 @@ function WhatWeDo(props) {
     loop: true,
     backSpeed: 30,
   })
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  }
   return (
     <Layout>
       <SEO
@@ -155,26 +152,21 @@ function WhatWeDo(props) {
               <FormattedMessage id="Headline.bodytext" />
             </p>*/}
           </div>
-          <Slider {...settings}>
+
+          <button onClick={back}>Back</button>
+          <button onClick={forward}>Forward</button>
+          <Carousel value={carousel} onChange={setCarousel}>
             <div>
-              <h3>1</h3>
+              <h3 className="legend">1</h3>
+              <p>HALLLOOOO</p>
             </div>
             <div>
-              <h3>2</h3>
+              <h3 className="legend">2</h3>
             </div>
             <div>
-              <h3>3</h3>
+              <h3 className="legend">3</h3>
             </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
-          </Slider>
+          </Carousel>
           <div className={styles.projects}>
             <h1 className={styles.headline_projects}>
               So, what does it means?
