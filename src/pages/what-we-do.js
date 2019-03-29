@@ -119,10 +119,6 @@ function WhatWeDo(props) {
   const intl = useIntl()
 
   const textRef = useRef()
-  const CAROUSEL_SIZE = 3
-  const [carousel, setCarousel] = useState(0)
-  const back = () => setCarousel(x => (CAROUSEL_SIZE + x - 1) % CAROUSEL_SIZE)
-  const forward = () => setCarousel(x => (x + 1) % CAROUSEL_SIZE)
 
   useTyped(textRef, {
     strings: [
@@ -155,7 +151,7 @@ function WhatWeDo(props) {
 
           <button onClick={back}>Back</button>
           <button onClick={forward}>Forward</button>
-          <Carousel value={carousel} onChange={setCarousel}>
+          <Carousel arrows>
             <div>
               <h3 className="legend">1</h3>
               <p>HALLLOOOO</p>
