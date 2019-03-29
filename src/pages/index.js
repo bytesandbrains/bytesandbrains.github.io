@@ -1,7 +1,9 @@
-import React, { useRef } from 'react'
+/* global gtag */
+
+import React from 'react'
 import { Link } from 'gatsby'
 import { useIntl, FormattedMessage } from '../intl/main.js'
-import useTyped from '../hooks/typed.js'
+
 import ContactBlock from '../components/contact-block.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo.js'
@@ -18,18 +20,7 @@ import styles from '../styles/index.module.css'
 
 const Home = props => {
   const intl = useIntl()
-  const textRef = useRef()
 
-  useTyped(textRef, {
-    strings: [
-      intl.formatMessage({ id: 'Typed.first' }),
-      intl.formatMessage({ id: 'Typed.second' }),
-      intl.formatMessage({ id: 'Typed.third' }),
-    ],
-    typeSpeed: 80,
-    loop: true,
-    backSpeed: 30,
-  })
   function handleReadmore() {
     gtag('event', 'click_read_more', {
       event_category: 'Button',
@@ -60,8 +51,6 @@ const Home = props => {
             <div className={styles.headlineText}>
               <h2>
                 <FormattedMessage id="Headline.tekst" />
-
-                <span ref={textRef} className={styles.typedText} />
               </h2>
             </div>
             <Link

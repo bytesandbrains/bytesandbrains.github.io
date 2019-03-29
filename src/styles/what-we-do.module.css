@@ -18,7 +18,22 @@
 .headline_weTransform {
   padding-bottom: 0.5em;
 }
-
+.typedText {
+  color: var(--gold-color);
+}
+.project_outer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.project_inner {
+  padding: 5%;
+  text-align: left;
+}
+.project_text  {
+}
+.case_text {
+  color: var(--gold-color);
+}
 .techLogoLeft1,
 .techLogoLeft2,
 .techLogoLeft3,

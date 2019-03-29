@@ -4,7 +4,8 @@
   "Notfound.text": "Oops",
 
   "Meta.frontpage.title": "Bytes and Brains",
-  "Meta.frontpage.text": "Super-charge your software engineers with a team of experienced consultants. We are a full-stack team of data scientists and software engineers that specialize in machine learning, devops and web technologies.",
+  "NOT_USED_OLD_SHIT_Meta.frontpage.text": "Super-charge your software engineers with a team of experienced consultants. We are a full-stack team of data scientists and software engineers that specialize in machine learning, devops and web technologies.",
+  "Meta.frontpage.text": "We help your company create value from your data",
   "Meta.whatwedo.title": "What we do - Bytes and Brains",
   "Meta.whatwedo.text": "We help our customers take advantage of machine learning (AI), scientific programming, and scalable devops infrastructure. We help our customers turn state-of-the-art research into to robust, commercial software and take on advisory roles in data science teams.",
   "Meta.whoweare.title": "Who we are - Bytes and Brains",
@@ -15,16 +16,16 @@
   "Header.blog": "Blog",
   "Header.whatwedo": "What we do",
   "Header.whoweare": "Who we are",
-  "Header.contact": "Contact",
+  "Header.contact": "Get in touch",
 
-  "Headline.overskrift": "New solutions for new problems",
-  "Headline.tekst": "Super-charge your software engineers with a team of experienced ",
-  "Typed.first": "Data Scientists.",
-  "Typed.second": "Scientific Programmers.",
-  "Typed.third": "DevOps specialists.",
+  "NOT_USED_OLD_SHIT_Headline.overskrift": "New solutions for new problems",
+  "Headline.overskrift": "We help companies create value from data",
+  "NOT_USED_OLD_SHIT_Headline.tekst": "Super-charge your software engineers with a team of experienced ",
+  "Headline.tekst": "By creating a clear image of large amounts of data through easy-to-use-software",
+
   "Read.more.button.one": "Read more",
 
-  "Pitch.tekst": "We transform scientific research into relevant, robust, and easy-to-use software.",
+  "Pitch.tekst": "We transform data into relevant, robust, and easy-to-use software.",
   "Checklist.punkt.et.fed": "We help",
   "Checklist.punkt.et": "our customers turn ideas into code. We use modern technologies to accelerate our customer's product development and transfer knowledge to our customer's technical teams with concise code, documentation, and training.",
   "Checklist.punkt.to.fed": "We are",
@@ -32,7 +33,7 @@
   "Checklist.punkt.to.og": "and",
   "Checklist.punkt.tre.fed": "We love",
   "Checklist.punkt.tre": "to learn. We love to work with modern technologies. We love to work in diverse fields. Therefore we choose to be consultants. How can we help you?",
-  "Checklist.button": "Free consultation",
+  "Checklist.button": "Get in touch",
 
   "What.we.do.step.tekst.one": "We provide data science consulting to help customers develop AI algorithms, web applications, and data-driven products. We design, implement, and integrate these solutions with our customer’s technology stack.",
   "What.we.do.step.tekst.two": "We specialize in turning scientific research into real software. We help customers in many fields including machine learning, medical image processing, geoinformation systems (GIS), data mining, and full-stack web development.",
@@ -49,7 +50,7 @@
   "Employee.three.description": "Part time - Copenhagen - iOS/Andriod app development, Java, Swift, HTML/JavaScript/CSS",
 
   "Footer.frontpage.headline": "How can we help you?",
-  "Footer.frontpage.button": "Contact us now",
+  "Footer.frontpage.button": "Get in touch",
   "Footer.all.sites.tekst": "© 2018 Bytes & Brains IVS – All Rights Reserved – contact@bytesandbrains.com",
   "Footer.all.sites.address": "Ved Stadsgraven 9, kld. tv. 2300 København S – CVR: 38952137 - Phone: +45 42670301",
 
@@ -57,8 +58,11 @@
   "Cookie.consent.link": "See our cookie policy",
   "Cookie.consent.button": "Accept!",
 
-  "Headline.we.transform": "We transform scientific research into easy to-use-software",
-  "Headline.bodytext": "We help our customers take advantage of machine learning (AI), scientific programming, and scalable devops infrastructure",
+  "Headline.we.transform": "We help our customers take advantage of ",
+  "Typed.first": "machine learning (AI)",
+  "Typed.second": "scientific programming ",
+  "Typed.third": "scalable devops infrastructure",
+  "NOT_USED_OLD_SHIT_Headline.bodytext": "We transform scientific research into easy to-use-software",
 
   "Bodyleft.first": "We develop end-to-end machine learning (AI) pipelines, apply state-of-the art models to our customer’s problems, and integrate these solutions with our customer’s software stack. We also take on advisory roles data science teams.",
   "Headlineleft.first": "Machine Learning",
@@ -75,7 +79,7 @@
 
   "What.we.do.talks.headline": "Do you need an engaging speaker?",
   "What.we.do.talks.text": "Through our work we keep up with the latest developments in technology. Get in touch and let’s find out if we can do a talk that fits your audience.",
-  "What.we.do.contact.button": "Contact us now",
+  "What.we.do.contact.button": "Get in touch",
 
   "We.are.your": "We are your competitive advantage",
   "Om.os.one.gold": "We like to learn.",
@@ -103,7 +107,7 @@
   "Axel.text": "When he is not studying computer science at Copenhagen University, Axel is our student assistant. He works with Python, C and whatever else we try to throw at him. He works with analytics reasoning to turn raw data into usable insight.",
 
   "Contact.formular.headline": "Get in touch",
-  "Contact.formular.text": "Do you have project for us? Give a short description of your project and we will get in touch",
+  "Contact.formular.text": "Give a short description of your project and we will get in touch",
   "Contactform.name": "Full name...",
   "Contactform.phone": "Phone number...",
   "Contactform.email": "E-mail address...",

@@ -32,18 +32,22 @@
     "react-helmet": "^5.2.0",
     "react-icons": "^3.2.2",
     "react-intl": "^2.7.2",
+    "react-slick": "^0.23.2",
+    "slick-carousel": "^1.8.1",
     "typed.js": "^2.0.9",
     "typeface-source-sans-pro": "^0.0.54"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "test": "npm run build && npx serve public",
-    "format": "prettier --write \"src/**/*.js\"",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "build": "gatsby build",
+    "format": "prettier --write \"src/**/*.js\""
   },
   "devDependencies": {
     "gatsby-plugin-react-svg": "2.0.0",

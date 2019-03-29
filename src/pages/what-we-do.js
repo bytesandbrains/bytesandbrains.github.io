@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'gatsby'
-
+import Slider from 'react-slick'
+import useTyped from '../hooks/typed.js'
 import { useIntl, FormattedMessage } from '../intl/main.js'
 import whatWeDoBody from '../data/what-we-do.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 import commonStyles from '../styles/common.module.css'
 import styles from '../styles/what-we-do.module.css'
@@ -115,6 +118,25 @@ function WhatWeDoData(props) {
 function WhatWeDo(props) {
   const intl = useIntl()
 
+  const textRef = useRef()
+
+  useTyped(textRef, {
+    strings: [
+      intl.formatMessage({ id: 'Typed.first' }),
+      intl.formatMessage({ id: 'Typed.second' }),
+      intl.formatMessage({ id: 'Typed.third' }),
+    ],
+    typeSpeed: 80,
+    loop: true,
+    backSpeed: 30,
+  })
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  }
   return (
     <Layout>
       <SEO
@@ -127,10 +149,78 @@ function WhatWeDo(props) {
           <div className={`Headline-overskrift ${styles.headline}`}>
             <h1 className={styles.headline_weTransform}>
               <FormattedMessage id="Headline.we.transform" />
+              <span ref={textRef} className={styles.typedText} />
             </h1>
-            <p>
+            {/*<p>
               <FormattedMessage id="Headline.bodytext" />
-            </p>
+            </p>*/}
+          </div>
+          <Slider {...settings}>
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
+            <div>
+              <h3>6</h3>
+            </div>
+          </Slider>
+          <div className={styles.projects}>
+            <h1 className={styles.headline_projects}>
+              So, what does it means?
+            </h1>
+            <h2 className={styles.headline_projects}>See these examples</h2>
+            <div className={styles.project_outer}>
+              <div className={styles.project_inner}>
+                <p className={styles.project_text}>
+                  <span className={styles.case_text}>CASE:</span> for
+                  scandinavian highlands we made Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit
+                  in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div className={styles.project_inner}>
+                <p className={styles.project_text}>
+                  <span className={styles.case_text}>CASE:</span> for
+                  scandinavian highlands we made Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit
+                  in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+              <div className={styles.project_inner}>
+                <p className={styles.project_text}>
+                  <span className={styles.case_text}>CASE:</span> for
+                  scandinavian highlands we made Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit
+                  in voluptate velit esse cillum dolore eu fugiat nulla
+                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                  in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+              </div>
+            </div>
           </div>
           <div>
             {whatWeDoBody.map((whatWeDoBody, index) => (

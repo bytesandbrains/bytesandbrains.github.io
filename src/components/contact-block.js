@@ -1,3 +1,5 @@
+/* global gtag */
+
 import React from 'react'
 import { FormattedMessage } from '../intl/main.js'
 import { Link } from 'gatsby'

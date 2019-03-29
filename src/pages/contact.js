@@ -1,3 +1,5 @@
+/* global gtag */
+
 import React from 'react'
 import { useIntl, FormattedMessage } from '../intl/main.js'
 import Layout from '../components/layout.js'
