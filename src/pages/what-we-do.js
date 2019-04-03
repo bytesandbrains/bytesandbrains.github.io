@@ -1,12 +1,12 @@
 import React, { useRef, useState } from 'react'
-import { Link } from 'gatsby'
+import { Link, withPrefix } from 'gatsby'
 import useTyped from '../hooks/typed.js'
 import { useIntl, FormattedMessage } from '../intl/main.js'
 import whatWeDoBody from '../data/what-we-do.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
 
-import Carousel from '@brainhubeu/react-carousel'
+import Carousel, { Dots } from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
 
 import commonStyles from '../styles/common.module.css'
@@ -120,6 +120,8 @@ function WhatWeDo(props) {
 
   const textRef = useRef()
 
+  const [dots, setDots] = useState(0)
+
   useTyped(textRef, {
     strings: [
       intl.formatMessage({ id: 'Typed.first' }),
@@ -149,65 +151,35 @@ function WhatWeDo(props) {
             </p>*/}
           </div>
 
-          <button onClick={back}>Back</button>
-          <button onClick={forward}>Forward</button>
-          <Carousel arrows>
-            <div>
-              <h3 className="legend">1</h3>
-              <p>HALLLOOOO</p>
-            </div>
-            <div>
-              <h3 className="legend">2</h3>
-            </div>
-            <div>
-              <h3 className="legend">3</h3>
-            </div>
-          </Carousel>
           <div className={styles.projects}>
-            <h1 className={styles.headline_projects}>
-              So, what does it means?
-            </h1>
-            <h2 className={styles.headline_projects}>See these examples</h2>
+            <h1 className={styles.headline_projects}>So what does it mean?</h1>
+
             <div className={styles.project_outer}>
-              <div className={styles.project_inner}>
-                <p className={styles.project_text}>
-                  <span className={styles.case_text}>CASE:</span> for
-                  scandinavian highlands we made Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-              <div className={styles.project_inner}>
-                <p className={styles.project_text}>
-                  <span className={styles.case_text}>CASE:</span> for
-                  scandinavian highlands we made Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-              <div className={styles.project_inner}>
-                <p className={styles.project_text}>
-                  <span className={styles.case_text}>CASE:</span> for
-                  scandinavian highlands we made Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat. Duis aute irure dolor in reprehenderit
-                  in voluptate velit esse cillum dolore eu fugiat nulla
-                  pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                  in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+              <Carousel autoPlay={0} stopAutoPlayOnHover>
+                <div className={styles.project_inner}>
+                  <p className={styles.project_text}>
+                    <span className={styles.case_text}>CASE:</span> This video
+                    illustrates how the software, built by Bytes & Brains,
+                    enabled one of our customers to fill in missing geographical
+                    data samples in an existing database. The orange dots are
+                    the generated data. Get in touch for at talk on how we can
+                    create value from your data! Part of our work is open
+                    sourced and can be found at our github profile. <br />
+                    <Link to="https://github.com/bytesandbrains/h3-pg">
+                      https://github.com/bytesandbrains/h3-pg
+                    </Link>
+                  </p>
+                  <video
+                    className={styles.project_video}
+                    autoPlay={true}
+                    muted
+                    controls
+                    src={withPrefix('video/Creeking.webm')}
+                    type="video/mp4"
+                    width="100%"
+                  />
+                </div>
+              </Carousel>
             </div>
           </div>
           <div>
