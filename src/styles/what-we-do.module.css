@@ -11,8 +11,8 @@
   color: var(--white-color);
 }
 .headline {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-bottom: 4em;
 }
 .headline_weTransform {

@@ -5,6 +5,7 @@ import { useIntl, FormattedMessage } from '../intl/main.js'
 import whatWeDoBody from '../data/what-we-do.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 
 import Carousel, { Dots } from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
@@ -165,9 +166,9 @@ function WhatWeDo(props) {
                     the generated data. Get in touch for at talk on how we can
                     create value from your data! Part of our work is open
                     sourced and can be found at our github profile. <br />
-                    <Link to="https://github.com/bytesandbrains/h3-pg">
+                    <OutboundLink href="https://github.com/bytesandbrains/h3-pg">
                       https://github.com/bytesandbrains/h3-pg
-                    </Link>
+                    </OutboundLink>
                   </p>
                   <video
                     className={styles.project_video}

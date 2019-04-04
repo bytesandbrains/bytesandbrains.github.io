@@ -11,3 +11,9 @@
 .headline {
   margin-bottom: 1em;
 }
+@media screen and (max-width: 500px) {
+  .inner {
+    margin-left: 0%;
+    text-align: center;
+  }
+}
