@@ -174,7 +174,7 @@ function WhatWeDo(props) {
                     autoPlay={true}
                     muted
                     controls
-                    src={withPrefix('video/Creeking.webm')}
+                    src={withPrefix('video/Creeking.mov')}
                     type="video/mp4"
                     width="100%"
                   />
