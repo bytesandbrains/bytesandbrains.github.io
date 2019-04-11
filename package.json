@@ -8,6 +8,7 @@
     "gatsby": "^2.3.4",
     "gatsby-image": "^2.0.35",
     "gatsby-plugin-gtag": "^1.0.10",
+    "gatsby-plugin-linkedin-insight": "^1.0.1",
     "gatsby-plugin-manifest": "^2.0.25",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.11",
