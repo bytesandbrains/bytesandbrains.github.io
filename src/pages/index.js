@@ -1,15 +1,15 @@
 /* global gtag */
 
-import React from 'react'
+import React, { useRef } from 'react'
 import { Link } from 'gatsby'
 import { useIntl, FormattedMessage } from '../intl/main.js'
-
+import useTyped from '../hooks/typed.js'
 import ContactBlock from '../components/contact-block.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo.js'
 import { MdCamera, MdGraphicEq, MdMemory } from 'react-icons/md'
 
-import ComputerKodeSkærm from '../images/Data-visualisation-min.png'
+import SplashImage from '../images/Data-visualisation-min.png'
 import Frederiksberg from '../images/logos/FrederiksbergLogo.png'
 import Roskilde from '../images/logos/RoskildeSygehus.png'
 import TetraPak from '../images/logos/TetraPak.png'
@@ -20,6 +20,18 @@ import styles from '../styles/index.module.css'
 
 const Home = props => {
   const intl = useIntl()
+
+   const textRef = useRef()  
+   useTyped(textRef, {  
+    strings: [  
+      intl.formatMessage({ id: 'Typed.first' }),  
+      intl.formatMessage({ id: 'Typed.second' }), 
+      intl.formatMessage({ id: 'Typed.third' }),  
+    ],  
+    typeSpeed: 80,  
+    loop: true, 
+    backSpeed: 30,  
+  })
 
   function handleReadmore() {
     gtag('event', 'click_read_more', {
@@ -51,6 +63,7 @@ const Home = props => {
             <div className={styles.headlineText}>
               <h2>
                 <FormattedMessage id="Headline.tekst" />
+                <span ref={textRef} className={styles.typedText} />
               </h2>
             </div>
             <Link
@@ -80,12 +93,7 @@ const Home = props => {
                     <b>
                       <FormattedMessage id="Checklist.punkt.to.fed" />
                     </b>{' '}
-                    <FormattedMessage id="Checklist.punkt.to" />{' '}
-                    <a href="https://www.tensorflow.org/">TensorFlow</a>{' '}
-                    (Google), <a href="https://uber.github.io/h3">h3</a> (Uber),{' '}
-                    <a href="https://itk.org/">ITK</a> (Kitware),{' '}
-                    <FormattedMessage id="Checklist.punkt.to.og" />{' '}
-                    <a href="http://eigen.tuxfamily.org/">eigen</a>.
+                    <FormattedMessage id="Checklist.punkt.to" />
                   </li>
                   <li>
                     <b>
@@ -104,8 +112,8 @@ const Home = props => {
               </div>
               <img
                 alt="Data visualisation"
-                className={styles.computer}
-                src={ComputerKodeSkærm}
+                className={styles.splash}
+                src={SplashImage}
               />
             </div>
           </div>
@@ -117,7 +125,7 @@ const Home = props => {
                 <MdCamera className={styles.icon} />
                 <h2 className={styles.whatWeDoStepHeadline}>
                   {' '}
-                  Machine Learning
+                  Artificial Intelligence
                 </h2>
                 <p className={styles.whatWeDoStepText}>
                   <FormattedMessage id="What.we.do.step.tekst.one" />
@@ -128,7 +136,7 @@ const Home = props => {
               <div className={styles.whatWeDoStep}>
                 <MdMemory className={styles.icon} />
                 <h2 className={styles.whatWeDoStepHeadline}>
-                  Scientific Programming
+                  Data Science
                 </h2>
                 <p className={styles.whatWeDoStepText}>
                   <FormattedMessage id="What.we.do.step.tekst.two" />

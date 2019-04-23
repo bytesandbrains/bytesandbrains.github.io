@@ -62,6 +62,12 @@ const WhoWeAre = props => {
             </span>
             <FormattedMessage id="Om.os.three" />
           </h2>
+          <h2 className={styles.omos}>
+            <span className={styles.emphasisGold}>
+              <FormattedMessage id="Om.os.four.gold" />
+            </span>
+            <FormattedMessage id="Om.os.four" />
+          </h2>
         </div>
 
         <div className={styles.descriptions}>

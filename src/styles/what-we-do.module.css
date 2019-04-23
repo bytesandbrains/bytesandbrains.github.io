@@ -1,6 +1,6 @@
 .outer {
   background-color: var(--primary-color);
-  padding-top: 15em;
+  padding-top: 10em;
   color: var(--white-color);
   text-align: center;
 }
@@ -16,8 +16,7 @@
   padding-bottom: 4em;
 }
 .headline_weTransform {
-  padding-bottom: 0.5em;
-  text-align: left;
+  text-align: center;
 }
 .typedText {
   color: var(--gold-color);

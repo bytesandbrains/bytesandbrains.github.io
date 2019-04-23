@@ -9,7 +9,8 @@ import RLogo from '../images/logos/R_logo.png'
 import React from '../images/logos/React-icon.png'
 import TensorFlow from '../images/logos/Tensorflow_logo.png'
 import GoogleCloud from '../images/logos/GoogleCloud.png'
-import Kubernetes from '../images/logos/Kubernetes.png'
+import AWS from '../images/logos/AWS.png'
+import Azure from '../images/logos/Azure.png'
 //import Csharp from "../images/logos/csharp-logo.png";
 //import ITK from "../images/logos/ITK-JPEG.jpg";
 //import Java from "../images/logos/Java.png";
@@ -49,7 +50,8 @@ const whatWeDoBody = [
     bodyLeft: 'Bodyleft.second',
     techLogo1: Docker,
     techLogo2: GoogleCloud,
-    techLogo3: Kubernetes,
+    techLogo3: AWS,
+    techLogo4: Azure,
   },
   {
     iconLeft: MdCode,

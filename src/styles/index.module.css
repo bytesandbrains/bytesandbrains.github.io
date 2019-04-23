@@ -17,7 +17,9 @@
 .headlineText {
   margin-bottom: 1.5em;
 }
-
+.typedText {
+  color: var(--gold-color);
+}
 .pitch::before {
   transform: skewY(-5deg);
   transform-origin: left top;
@@ -239,7 +241,7 @@
   border-radius: 50%;
 }
 /*Billeder*/
-.computer {
+.splash {
   position: absolute;
   margin-top: -190px;
   z-index: -1;

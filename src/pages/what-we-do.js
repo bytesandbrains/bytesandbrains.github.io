@@ -1,6 +1,5 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { Link, withPrefix } from 'gatsby'
-import useTyped from '../hooks/typed.js'
 import { useIntl, FormattedMessage } from '../intl/main.js'
 import whatWeDoBody from '../data/what-we-do.js'
 import Layout from '../components/layout.js'
@@ -119,20 +118,8 @@ function WhatWeDoData(props) {
 function WhatWeDo(props) {
   const intl = useIntl()
 
-  const textRef = useRef()
-
   const [dots, setDots] = useState(0)
 
-  useTyped(textRef, {
-    strings: [
-      intl.formatMessage({ id: 'Typed.first' }),
-      intl.formatMessage({ id: 'Typed.second' }),
-      intl.formatMessage({ id: 'Typed.third' }),
-    ],
-    typeSpeed: 80,
-    loop: true,
-    backSpeed: 30,
-  })
   return (
     <Layout>
       <SEO
@@ -144,31 +131,22 @@ function WhatWeDo(props) {
         <div className={styles.outer}>
           <div className={`Headline-overskrift ${styles.headline}`}>
             <h1 className={styles.headline_weTransform}>
-              <FormattedMessage id="Headline.we.transform" />
-              <span ref={textRef} className={styles.typedText} />
+              <FormattedMessage id="Whatwedo.Headline" />
             </h1>
-            {/*<p>
-              <FormattedMessage id="Headline.bodytext" />
-            </p>*/}
           </div>
 
           <div className={styles.projects}>
-            <h1 className={styles.headline_projects}>So what does it mean?</h1>
-
             <div className={styles.project_outer}>
               <Carousel autoPlay={0} stopAutoPlayOnHover>
                 <div className={styles.project_inner}>
                   <p className={styles.project_text}>
                     <span className={styles.case_text}>CASE:</span> This video
-                    illustrates how the software, built by Bytes & Brains,
-                    enabled one of our customers to fill in missing geographical
-                    data samples in an existing database. The orange dots are
-                    the generated data. Get in touch for at talk on how we can
-                    create value from your data! Part of our work is open
-                    sourced and can be found at our github profile. <br />
-                    <OutboundLink href="https://github.com/bytesandbrains/h3-pg">
-                      https://github.com/bytesandbrains/h3-pg
-                    </OutboundLink>
+                    illustrates how Bytes & Brains a company to fill in missing 
+                    samples in a geographical data set. The orange dots are
+                    generated from existing data. Part of the work is open
+                    source and can be found on <OutboundLink href="https://github.com/bytesandbrains/h3-pg">
+                    GitHub</OutboundLink>. Get in touch
+                    and let's talk about what we can do for you!
                   </p>
                   <video
                     className={styles.project_video}

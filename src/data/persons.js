@@ -6,7 +6,26 @@ import Valentin from '../images/BillederAfOs/Portrait-of-Valentin-min.jpg'
 import Zacharias from '../images/BillederAfOs/Portrait-of-Zach-min.jpg'
 import Oliver from '../images/BillederAfOs/Portrait-of-Oliver-min.jpg'
 import Axel from '../images/BillederAfOs/Portrait-of-Axel-min.jpg'
+import Kasper from '../images/BillederAfOs/Portrait-of-Kasper-min.jpg'
 const persons = [
+  {
+    name: 'Kasper Marstal',
+    titel: 'Kasper.titel',
+    face: Kasper,
+    text: 'Kasper.text',
+  },
+  {
+    name: 'Benjamin Legarth',
+    titel: 'Benjamin.titel',
+    face: Benjamin,
+    text: 'Benjamin.text',
+  },
+  {
+    name: 'Anders Lykkestrup',
+    titel: 'Anders.titel',
+    face: Anders,
+    text: 'Anders.text',
+  },
   {
     name: 'Sigurd Carlsen',
     titel: 'Sigurd.titel',
@@ -36,18 +55,6 @@ const persons = [
     titel: 'Oliver.titel',
     face: Oliver,
     text: 'Oliver.text',
-  },
-  {
-    name: 'Benjamin Legarth',
-    titel: 'Benjamin.titel',
-    face: Benjamin,
-    text: 'Benjamin.text',
-  },
-  {
-    name: 'Anders Lykkestrup',
-    titel: 'Anders.titel',
-    face: Anders,
-    text: 'Anders.text',
   },
   {
     name: 'Axel Christfort',
