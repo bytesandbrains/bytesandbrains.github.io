@@ -26,18 +26,18 @@
   "Typed.second": "Data Science",
   "Typed.third": "DevOps",
 
-  "Pitch.tekst": "What is Bytes & Brains",
+  "Pitch.tekst": "We love working with data",
   "Checklist.punkt.et.fed": "What",
-  "Checklist.punkt.et": "We are a team of data scientists artifical intelligence, and devops.",
+  "Checklist.punkt.et": "We are a team of data scientists that specialize in artifical intelligence, and devops.",
   "Checklist.punkt.to.fed": "How",
   "Checklist.punkt.to": "We provide data science consulting that helps you create efficient data-driven software. We design, implement, and integrate these solutions with your technology stack.",
   "Checklist.punkt.tre.fed": "Why",
   "Checklist.punkt.tre": " We love to learn. We love to work with modern technologies. We love to work in diverse fields. Therefore we choose to be consultants. How can we help you?",
   "Checklist.button": "Get in touch",
 
-  "What.we.do.step.tekst.one": "We develop end-to-end artificial intelligence pipelines that solves real problems and accelerates innovation. Our data scientists can help you better use your data, improve your operations, and provide new services.",
+  "What.we.do.step.tekst.one": "We develop end-to-end artificial intelligence pipelines that solves real problems. Our data scientists can help you better use your data, improve your operations, and provide new services.",
   "What.we.do.step.tekst.two": "We specialize in turning scientific research into real software. We have experience in many fields including, medical image processing, geoinformation systems (GIS), data mining, and data visualization.",
-  "What.we.do.step.tekst.three": "We can help you develop both on-premise and cloud-based DevOps architectures, continuous integration, and continuous deployment. We have experience with monolithic-, microservice-, and serverless architectures.",
+  "What.we.do.step.tekst.three": "We can help you develop both on-premise and cloud-based DevOps architectures, continuous integration, and continuous deployment infrastrucure. We are experienced with monolithic-, microservice-, and serverless architectures.",
   "Trusted.by": "Trusted by",
   "Trusted.and.more": "and more!",
 
@@ -79,11 +79,11 @@
 
   "We.are.your": "We are Bytes & Brains",
   "Om.os.one.gold": "We are",
-  "Om.os.one": "a team of data scientists and software engineers on a mission to unleash the full potential of our client's data. We take pride in concise code, clear documentation, and our ability to transfer knowledge to our customer's technical teams. ",
+  "Om.os.one": "a team of data scientists and software engineers on a mission to unleash the full potential of data. We take pride in concise code, clear documentation, and our ability to transfer knowledge to our customer's technical teams. ",
   "Om.os.two.gold": "We love",
-  "Om.os.two": "working at Bytes & Brains because we built a productive, mild, and fun working environment. Our desire to define our own company culture was the main motivation for founding our company.",
+  "Om.os.two": "working at Bytes & Brains because we built a productive, pleasant, and fun working environment. Our desire to define our own company culture was the main motivation for founding our company.",
   "Om.os.three.gold": "We learn",
-  "Om.os.three": "about new technologies in data science everyday. We contribute to several open source projects including TensorFlow (Google), h3 (Uber), ITK (Kitware), and eigen. Learning is fun and the second main motivation for founding our company.",
+  "Om.os.three": "about new technologies in data science everyday. We contribute to several open source projects including TensorFlow (Google), h3 (Uber), ITK (Kitware), and eigen. Learning is fun and our desire work in a learning environment was the second motivation for founding our company.",
   "Om.os.four.gold": "We like",
   "Om.os.four": "to work in diverse fields. Therefore we choose to be consultants. How can we help you?",
 
