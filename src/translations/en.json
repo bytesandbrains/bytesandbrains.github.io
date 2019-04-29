@@ -30,7 +30,7 @@
 
   "Pitch.tekst": "We love working with data",
   "Checklist.punkt.et.fed": "What",
-  "Checklist.punkt.et": "We are a team of data scientists that specialize in artifical intelligence, and devops.",
+  "Checklist.punkt.et": "We are a team of data scientists that specialize in artifical intelligence, full-stack development, and devops.",
   "Checklist.punkt.to.fed": "How",
   "Checklist.punkt.to": "We provide data science consulting that helps you create efficient data-driven software. We design, implement, and integrate these solutions with your technology stack.",
   "Checklist.punkt.tre.fed": "Why",
@@ -100,7 +100,7 @@
   "Emil.titel": "Data Scientist",
   "Emil.text": "I am quite experienced in developing software for the healthcare sector. For example, I developed applications for automated healthcare journals and image diagnostics and iOS/Android apps for automatic detection of cardiac arythmia and sleep stages. I have an MSc in Medicine & Technology.",
   "Valentin.titel": "Software Engineer",
-  "Valentin.text": "I am a physicist by heart but have focused most of my degree on software development. I have worked in large IT organizations mostly with backend development. I have a BSc in physics.",
+  "Valentin.text": "I am a physicist by heart but have focused most of my degree on software development. I have worked in large IT organizations with both backend and frontend development. I have a BSc in physics.",
   "Zacharias.titel": "Software Engineer",
   "Zacharias.text": "My colleagues say my productiveness is superhuman. I would say I am simply well-versed in C/C++, Python, Java and a lot of modern JS technologies such as React, Redux and GraphQL. I have built many large software projects from scratch including content management systems, geospatial information systems and data visualisation tools. I have a BSc in Computer Science.",
   "Oliver.titel": "Data Scientist",
