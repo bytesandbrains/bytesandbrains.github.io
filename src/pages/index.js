@@ -4,12 +4,14 @@ import React, { useRef } from 'react'
 import { Link } from 'gatsby'
 import { useIntl, FormattedMessage } from '../intl/main.js'
 import useTyped from '../hooks/typed.js'
-import ContactBlock from '../components/contact-block.js'
+import FooterFrontpage from '../components/footerFrontpage.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo.js'
 import { MdCamera, MdGraphicEq, MdMemory } from 'react-icons/md'
 
-import SplashImage from '../images/Data-visualisation-min.png'
+import SplashImage3 from '../images/frontpage/ide.png'
+import SplashImage2 from '../images/frontpage/kraken.png'
+import SplashImage1 from '../images/frontpage/visualization.png'
 import Frederiksberg from '../images/logos/FrederiksbergLogo.png'
 import Roskilde from '../images/logos/RoskildeSygehus.png'
 import TetraPak from '../images/logos/TetraPak.png'
@@ -21,16 +23,16 @@ import styles from '../styles/index.module.css'
 const Home = props => {
   const intl = useIntl()
 
-   const textRef = useRef()  
-   useTyped(textRef, {  
-    strings: [  
-      intl.formatMessage({ id: 'Typed.first' }),  
-      intl.formatMessage({ id: 'Typed.second' }), 
-      intl.formatMessage({ id: 'Typed.third' }),  
-    ],  
-    typeSpeed: 80,  
-    loop: true, 
-    backSpeed: 30,  
+  const textRef = useRef()
+  useTyped(textRef, {
+    strings: [
+      intl.formatMessage({ id: 'Typed.first' }),
+      intl.formatMessage({ id: 'Typed.second' }),
+      intl.formatMessage({ id: 'Typed.third' }),
+    ],
+    typeSpeed: 80,
+    loop: true,
+    backSpeed: 30,
   })
 
   function handleReadmore() {
@@ -76,46 +78,63 @@ const Home = props => {
           </div>
         </div>
         <div className={styles.pitch}>
-          <div>
-            <div className={styles.pitchText}>
-              <div>
-                <h2>
-                  <FormattedMessage id="Pitch.tekst" />
-                </h2>
-                <ul className={styles.checklist}>
-                  <li>
-                    <b>
-                      <FormattedMessage id="Checklist.punkt.et.fed" />
-                    </b>{' '}
-                    <FormattedMessage id="Checklist.punkt.et" />
-                  </li>
-                  <li>
-                    <b>
-                      <FormattedMessage id="Checklist.punkt.to.fed" />
-                    </b>{' '}
-                    <FormattedMessage id="Checklist.punkt.to" />
-                  </li>
-                  <li>
-                    <b>
-                      <FormattedMessage id="Checklist.punkt.tre.fed" />
-                    </b>{' '}
-                    <FormattedMessage id="Checklist.punkt.tre" />
-                  </li>
-                </ul>
-                <Link
-                  to="/contact"
-                  className={styles.checklistButton}
-                  onClick={handleFreeConsultation}
-                >
-                  <FormattedMessage id="Checklist.button" />
-                </Link>
+          <div className={styles.pitchText}>
+            <div>
+              <h2>
+                <FormattedMessage id="Pitch.tekst" />
+              </h2>
+              <div className={styles.checklist}>
+                <p className={styles.checklistPoint}>
+                  <b>
+                    <FormattedMessage id="Checklist.punkt.et.fed" />
+                  </b>{' '}
+                </p>
+                <p className={styles.checklistText}>
+                  <FormattedMessage id="Checklist.punkt.et" />
+                </p>
+                <p className={styles.checklistPoint}>
+                  <b>
+                    <FormattedMessage id="Checklist.punkt.to.fed" />
+                  </b>{' '}
+                </p>
+                <p className={styles.checklistText}>
+                  <FormattedMessage id="Checklist.punkt.to" />
+                </p>
+                <p className={styles.checklistPoint}>
+                  <b>
+                    <FormattedMessage id="Checklist.punkt.tre.fed" />
+                  </b>{' '}
+                </p>
+                <p className={styles.checklistText}>
+                  <FormattedMessage id="Checklist.punkt.tre" />
+                </p>
               </div>
-              <img
-                alt="Data visualisation"
-                className={styles.splash}
-                src={SplashImage}
-              />
+
+              <Link
+                to="/contact"
+                className={styles.checklistButton}
+                onClick={handleFreeConsultation}
+              >
+                <FormattedMessage id="Checklist.button" />
+              </Link>
             </div>
+          </div>
+          <div className={styles.splashPictures}>
+            <img
+              alt="Data visualisation"
+              className={styles.splash + ' ' + styles.Picture1}
+              src={SplashImage1}
+            />
+            <img
+              alt="Data visualisation"
+              className={styles.splash + ' ' + styles.Picture2}
+              src={SplashImage2}
+            />
+            <img
+              alt="Data visualisation"
+              className={styles.splash + ' ' + styles.Picture3}
+              src={SplashImage3}
+            />
           </div>
         </div>
         <div className={styles.whatWeDoWrapper}>
@@ -135,9 +154,7 @@ const Home = props => {
             <article className={styles.whatWeDoStepWrapper}>
               <div className={styles.whatWeDoStep}>
                 <MdMemory className={styles.icon} />
-                <h2 className={styles.whatWeDoStepHeadline}>
-                  Data Science
-                </h2>
+                <h2 className={styles.whatWeDoStepHeadline}>Data Science</h2>
                 <p className={styles.whatWeDoStepText}>
                   <FormattedMessage id="What.we.do.step.tekst.two" />
                 </p>
@@ -228,7 +245,7 @@ const Home = props => {
             </p>
           </div>
         </div>
-        <ContactBlock />
+        <FooterFrontpage />
       </div>
     </Layout>
   )

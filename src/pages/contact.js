@@ -4,7 +4,7 @@ import React from 'react'
 import { useIntl, FormattedMessage } from '../intl/main.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
-
+import Footer from '../components/footer.js'
 import styles from '../styles/contact.module.css'
 
 const Contact = props => {
@@ -77,6 +77,7 @@ const Contact = props => {
           </form>
         </div>
       </div>
+      <Footer />
     </Layout>
   )
 }

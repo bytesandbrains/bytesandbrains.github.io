@@ -2,6 +2,7 @@ import React from 'react'
 import { useIntl, FormattedMessage } from '../intl/main.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Footer from '../components/footer.js'
 
 import styles from '../styles/404.module.css'
 
@@ -22,6 +23,7 @@ function NotFoundPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </Layout>
   )
 }

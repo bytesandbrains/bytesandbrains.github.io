@@ -4,6 +4,7 @@ import { useIntl } from '../intl/main.js'
 import Consent from '../components/consent.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
+import Footer from '../components/footer.js'
 
 import styles from '../styles/cookie-policy.module.css'
 
@@ -158,6 +159,7 @@ export default props => {
         </div>
         <Consent />
       </div>
+      <Footer />
     </Layout>
   )
 }

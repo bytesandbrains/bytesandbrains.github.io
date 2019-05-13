@@ -5,6 +5,7 @@ import whatWeDoBody from '../data/what-we-do.js'
 import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
 import { OutboundLink } from 'gatsby-plugin-gtag'
+import Footer from '../components/footer.js'
 
 import Carousel, { Dots } from '@brainhubeu/react-carousel'
 import '@brainhubeu/react-carousel/lib/style.css'
@@ -141,12 +142,14 @@ function WhatWeDo(props) {
                 <div className={styles.project_inner}>
                   <p className={styles.project_text}>
                     <span className={styles.case_text}>CASE:</span> This video
-                    illustrates how Bytes & Brains a company to fill in missing 
+                    illustrates how Bytes & Brains a company to fill in missing
                     samples in a geographical data set. The orange dots are
                     generated from existing data. Part of the work is open
-                    source and can be found on <OutboundLink href="https://github.com/bytesandbrains/h3-pg">
-                    GitHub</OutboundLink>. Get in touch
-                    and let's talk about what we can do for you!
+                    source and can be found on{' '}
+                    <OutboundLink href="https://github.com/bytesandbrains/h3-pg">
+                      GitHub
+                    </OutboundLink>
+                    . Get in touch and let's talk about what we can do for you!
                   </p>
                   <video
                     className={styles.project_video}
@@ -186,6 +189,7 @@ function WhatWeDo(props) {
           </div>
         </div>
       </div>
+      <Footer />
     </Layout>
   )
 }

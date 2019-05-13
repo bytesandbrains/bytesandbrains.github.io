@@ -13,7 +13,6 @@ const Layout = ({ children }) => {
       <div className={styles.app}>
         <Header />
         {children}
-        <Footer />
       </div>
       <CookieConsent />
     </>

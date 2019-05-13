@@ -5,14 +5,17 @@ import persons from '../data/persons.js'
 import ContactBlock from '../components/contact-block.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo.js'
+import Footer from '../components/footer.js'
 
 import styles from '../styles/who-we-are.module.css'
 
 function Person(props) {
+  const intl = useIntl()
   const name = props.name
   const title = props.titel
   const face = props.face
   const text = props.text
+  const contactemail = props.contactemail
   return (
     <div className={styles.person}>
       <img alt="Portrait of employee" className={styles.portrait} src={face} />
@@ -22,6 +25,11 @@ function Person(props) {
       </h6>
       <p className={styles.text}>
         <FormattedMessage id={text} />
+      </p>
+      <p className={styles.contactemail}>
+        <a href={`mailto://${intl.formatMessage({ id: contactemail })}`}>
+          <FormattedMessage id={contactemail} />
+        </a>
       </p>
     </div>
   )
@@ -78,6 +86,7 @@ const WhoWeAre = props => {
         </div>
       </div>
       <ContactBlock />
+      <Footer />
     </Layout>
   )
 }
