@@ -29,12 +29,12 @@
   "Typed.third": "DevOps",
 
   "Pitch.tekst": "We love working with data",
-  "Checklist.punkt.et.fed": "What",
-  "Checklist.punkt.et": "We are a team of data scientists that specialize in artifical intelligence, full-stack development, and devops.",
+  "Checklist.punkt.et.fed": "Why",
+  "Checklist.punkt.et": " We love to learn. We love to work with modern technologies. We love to work in diverse fields. Therefore we choose to be data science consultants. ",
   "Checklist.punkt.to.fed": "How",
   "Checklist.punkt.to": "We provide data science consulting that helps you create efficient data-driven software. We design, implement, and integrate these solutions with your technology stack.",
-  "Checklist.punkt.tre.fed": "Why",
-  "Checklist.punkt.tre": " We love to learn. We love to work with modern technologies. We love to work in diverse fields. Therefore we choose to be consultants. How can we help you?",
+  "Checklist.punkt.tre.fed": "What",
+  "Checklist.punkt.tre": "We are a team of data scientists that specialize in artifical intelligence, full-stack development, and devops. How can we help you get advantages of your data with the newest technologies?",
   "Checklist.button": "Get in touch",
 
   "What.we.do.step.tekst.one": "We develop end-to-end artificial intelligence pipelines that solves real problems. Our data scientists can help you better use your data, improve your operations, and provide new services.",
@@ -118,6 +118,7 @@
   "Axel.email": "axel@bytesandbrains.com",
 
   "Contact.formular.headline": "Get in touch",
+  "Contact.formular.contact.info": "Phone: +45 42 67 03 01 – Email: hello@bytesandbrains.com",
   "Contact.formular.text": "Give a short description of your project and we will get in touch",
   "Contactform.name": "Full name...",
   "Contactform.phone": "Phone number...",

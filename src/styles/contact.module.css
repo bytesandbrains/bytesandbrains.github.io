@@ -29,7 +29,9 @@
   font-size: 136%;
   cursor: pointer;
 }
-
+.contactInfomation {
+  font-size: 0.8em;
+}
 .inputSection {
   display: flex;
   justify-content: center;

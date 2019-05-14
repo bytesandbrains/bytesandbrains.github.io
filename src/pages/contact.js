@@ -28,6 +28,9 @@ const Contact = props => {
             <h1>
               <FormattedMessage id="Contact.formular.headline" />
             </h1>
+            <p className={styles.contactInfomation}>
+              <FormattedMessage id="Contact.formular.contact.info" />
+            </p>
             <p>
               <FormattedMessage id="Contact.formular.text" />
             </p>

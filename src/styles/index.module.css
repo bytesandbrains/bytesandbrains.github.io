@@ -36,11 +36,11 @@
 .pitchText {
   z-index: -4;
   position: relative;
-  padding-bottom: 2.5rem;
+  padding-bottom: 7.5rem;
   margin-left: 10%;
   flex-grow: 2;
   display: flex;
-  padding-top: 13rem;
+  padding-top: 18rem;
   color: var(--primary-color);
 }
 .pitch {
@@ -90,7 +90,6 @@
 }
 .splashPictures {
   grid-column-start: 2;
-  margin-top: 30%;
   margin-left: 2em;
 }
 .whatWeDoWrapper {
@@ -113,17 +112,17 @@
   box-shadow: var(--stack-after), var(--stack-before);
 }
 @media screen and (min-width: 1700px) {
-  .whatWeDoWrapper::before {
+  .whatWeDoWrapper:after {
     top: -40%;
     height: 165%;
   }
 }
 @media screen and (min-width: 2200px) {
-  .whatWeDoWrapper::before {
+  .whatWeDoWrapper:after {
     transform: skewY(-3deg);
     transform-origin: center;
     top: -40%;
-    height: 165%;
+    height: 170%;
   }
 }
 .whatWeDo {
@@ -247,28 +246,28 @@
   padding: 0.5rem;
   font-size: 3em;
   margin-right: 0.8rem;
-  border: 3px solid #d1d6de;
+  border: 3px solid var(--gold-color);
   border-radius: 50%;
 }
 /*Billeder*/
 .splash {
   position: absolute;
   transform: var(--picture-transformSkew);
-  width: 50%;
+  width: 60%;
 }
 .Picture1 {
   z-index: 104;
   margin-left: 12%;
-  top: 0em;
+  top: 5%;
 }
 .Picture2 {
   z-index: 103;
   margin-left: 6%;
-  top: 4em;
+  top: 15%;
 }
 .Picture3 {
   z-index: 102;
-  top: 6em;
+  top: 25%;
 }
 
 .trustedFirms > * {
@@ -281,11 +280,12 @@
 
 /*media query*/
 
-/*1200px*/
-@media screen and (max-width: 1200px) {
-  .Computer {
-    right: 1em;
-    top: -1em;
+/*Over 2000px*/
+@media screen and (min-width: 2000px) {
+  .splash {
+    position: absolute;
+    transform: var(--picture-transformSkew);
+    width: 30%;
   }
 }
 /*ipad*/
@@ -296,6 +296,7 @@
   .pitchText {
     padding-right: 20%;
     padding-top: 8em;
+    padding-bottom: 12.5rem;
   }
   .pitch {
     grid-template-columns: auto;
@@ -311,18 +312,18 @@
   }
   .Picture1 {
     z-index: 104;
-    margin-left: 45%;
-    top: 32em;
+    margin-left: 50%;
+    top: 64%;
   }
   .Picture2 {
     z-index: 103;
-    margin-left: 30%;
-    top: 34em;
+    margin-left: 40%;
+    top: 67%;
   }
   .Picture3 {
-    margin-left: 15%;
+    margin-left: 30%;
     z-index: 102;
-    top: 36em;
+    top: 70%;
   }
   .whatWeDoStepWrapper {
     width: auto;
@@ -355,10 +356,13 @@
   .headlineWrapper {
     height: 20em;
   }
+  .headlineWrapper:after {
+    height: 130%;
+  }
   .headline {
     margin-left: 5%;
     margin-right: 5%;
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .headlineOverskrift {
     font-size: 1em;
@@ -368,29 +372,9 @@
     overflow: hidden;
     grid-template-rows: auto auto;
   }
-  .splashPictures {
-    grid-column-start: 1;
-    grid-row-start: 2;
-  }
+
   .splash {
-    position: absolute;
-    transform: var(--picture-transformSkew);
-    width: 50%;
-  }
-  .Picture1 {
-    z-index: 104;
-    margin-left: 50%;
-    top: 2em;
-  }
-  .Picture2 {
-    z-index: 103;
-    margin-left: 35%;
-    top: 4em;
-  }
-  .Picture3 {
-    margin-left: 20%;
-    z-index: 102;
-    top: 6em;
+    display: none;
   }
   /*pitch*/
   .computer {
@@ -398,7 +382,7 @@
   }
   .pitchText {
     padding-right: 10%;
-    padding-bottom: 0;
+    padding-bottom: 20%;
   }
   .whatWeDo {
     padding-top: 0em;

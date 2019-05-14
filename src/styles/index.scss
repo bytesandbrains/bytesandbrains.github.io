@@ -15,14 +15,14 @@
   --flex-test: row;
   --stack-after: /*0px 3px 15px rgba(0, 0, 0, 0.8),*/
     /*second layer*/ 0px
-      5px 0px var(--senary-color),
-    /*second shadow*/ 0 5px 15px rgba(0, 0, 0, 1);
-  /*third layer 0px 40px 0px var(--gold-color),*/
+    5px 0px var(--senary-color);
+  /*second shadow 0 5px 15px rgba(0, 0, 0, 1);*/
+  /*third layer* 0px 40px 0px var(--gold-color)
   /*third Shadow 0 40px 10px rgba(0, 0, 0, 0.5);*/
   --stack-before: /*0px -3px 15px rgba(0, 0, 0, 0.8),*/
     /*second layer*/ 0px -5px
-      0px var(--senary-color),
-    /*second shadow*/ 0 -5px 15px rgba(0, 0, 0, 1);
+    0px var(--senary-color);
+  /*second shadow 0 -5px 15px rgba(0, 0, 0, 1);*/
   /*third layer 0px -40px 0px var(--gold-color),*/
   /*third Shadow 0 -40px 10px rgba(0, 0, 0, 0.5);*/
   --picture-transformSkew: perspective(50em) rotateY(40deg) rotateX(40deg);

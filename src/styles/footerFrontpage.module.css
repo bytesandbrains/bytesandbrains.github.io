@@ -44,3 +44,8 @@
     margin-left: 0%;
   }
 }
+@media screen and (min-width: 2200px) {
+  .wrapper:before {
+    top: -38%;
+  }
+}
