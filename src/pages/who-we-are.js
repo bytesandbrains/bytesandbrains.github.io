@@ -23,13 +23,13 @@ function Person(props) {
       <h6 className={styles.title}>
         <FormattedMessage id={title} />
       </h6>
-      <p className={styles.text}>
-        <FormattedMessage id={text} />
-      </p>
       <p className={styles.contactemail}>
         <a href={`mailto://${intl.formatMessage({ id: contactemail })}`}>
           <FormattedMessage id={contactemail} />
         </a>
+      </p>
+      <p className={styles.text}>
+        <FormattedMessage id={text} />
       </p>
     </div>
   )
