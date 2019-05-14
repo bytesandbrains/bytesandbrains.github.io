@@ -59,11 +59,11 @@ a {
   line-height: 0;
   background: transparent;
   display: none;
-  color: var(--gold-color);
+  color: var(--senary-color);
   padding: 0.5rem;
   font-size: 2em;
   margin-right: 0.8rem;
-  border: 3px solid #d1d6de;
+  border: 3px solid var(--senary-color);
   border-radius: 50%;
 }
 @media screen and (max-width: 600px) {
@@ -92,13 +92,13 @@ a {
   .responsiveSideLinks a {
     display: block;
     text-align: right;
-    border: 3px solid #d1d6de;
+    border: 3px solid var(--senary-color);
     border-radius: 15px;
     margin-left: 74%;
     padding-right: 10px;
     margin-bottom: 2px;
     background-color: var(--primary-color);
-    color: var(--gold-color);
+    color: var(--senary-color);
   }
   .responsiveSideLinks {
     display: block;

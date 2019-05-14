@@ -25,7 +25,7 @@ export default () => {
           </button>
           <h2
             className={
-              burgerState ? styles.sideLinks : styles.responsiveSideLinks
+              burgerState ? styles.responsiveSideLinks : styles.sideLinks
             }
           >
             {/*<Link
