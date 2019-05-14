@@ -280,12 +280,69 @@
 
 /*media query*/
 
+@media screen and (min-width: 1600px) {
+  .splash {
+    position: absolute;
+    transform: var(--picture-transformSkew);
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .splash {
+    position: absolute;
+    transform: var(--picture-transformSkew);
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .splash {
+    position: absolute;
+    transform: var(--picture-transformSkew);
+    width: 45%;
+  }
+}
 /*Over 2000px*/
 @media screen and (min-width: 2000px) {
   .splash {
     position: absolute;
     transform: var(--picture-transformSkew);
-    width: 30%;
+    width: 45%;
+  }
+}
+@media screen and (min-width: 2200px) {
+  .splash {
+    position: absolute;
+    transform: perspective(60em) rotateY(40deg) rotateX(40deg);
+    width: 50%;
+  }
+  .Picture1 {
+    z-index: 104;
+    margin-left: 10%;
+    top: -6%;
+  }
+  .Picture2 {
+    z-index: 103;
+    margin-left: 5%;
+    top: -4%;
+  }
+  .Picture3 {
+    margin-left: 0%;
+    z-index: 102;
+    top: -2%;
+  }
+}
+@media screen and (min-width: 2400px) {
+  .pitch {
+    margin-left: 5%;
+  }
+}
+@media screen and (min-width: 2700px) {
+  .pitch {
+    max-width: 2400px;
+    overflow: visible;
+  }
+  .splash {
+    width: 48%;
   }
 }
 /*ipad*/
