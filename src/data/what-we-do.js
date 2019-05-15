@@ -1,7 +1,7 @@
 import Android from '../images/logos/Android_robot.png'
+import Swift from '../images/logos/Swift_logo.png'
 import Cpp from '../images/logos/cpp_logo.png'
 import Docker from '../images/logos/docker.png'
-import GraphQL from '../images/logos/GraphQL_Logo.png'
 import Nodejs from '../images/logos/Node.js_logo.png'
 import Python from '../images/logos/Python-logo-notext.png'
 import Pytorch from '../images/logos/pytorch.png'
@@ -59,7 +59,7 @@ const whatWeDoBody = [
     keywordsleft: 'Keywordsright.second',
     bodyLeft: 'Bodyright.second',
     techLogo1: React,
-    techLogo2: GraphQL,
+    techLogo2: Swift,
     techLogo3: Nodejs,
     techLogo4: Android,
   },
