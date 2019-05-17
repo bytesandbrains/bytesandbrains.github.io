@@ -142,10 +142,7 @@ const Home = props => {
             <article className={styles.whatWeDoStepWrapper}>
               <div className={styles.whatWeDoStep}>
                 <MdCamera className={styles.icon} />
-                <h2 className={styles.whatWeDoStepHeadline}>
-                  {' '}
-                  Artificial Intelligence
-                </h2>
+                <h2 className={styles.whatWeDoStepHeadline}>Data Science</h2>
                 <p className={styles.whatWeDoStepText}>
                   <FormattedMessage id="What.we.do.step.tekst.one" />
                 </p>
@@ -154,7 +151,9 @@ const Home = props => {
             <article className={styles.whatWeDoStepWrapper}>
               <div className={styles.whatWeDoStep}>
                 <MdMemory className={styles.icon} />
-                <h2 className={styles.whatWeDoStepHeadline}>Data Science</h2>
+                <h2 className={styles.whatWeDoStepHeadline}>
+                  Process Optimization
+                </h2>
                 <p className={styles.whatWeDoStepText}>
                   <FormattedMessage id="What.we.do.step.tekst.two" />
                 </p>

@@ -20,7 +20,7 @@
   "Header.contact": "Get in touch",
 
   "Headline.overskrift": "Your data is your competitive advantage",
-  "Headline.tekst": "We unleash your data's full potential with ",
+  "Headline.tekst": "Find out how you can take advantage of ",
 
   "Read.more.button.one": "Read more",
 
@@ -28,17 +28,17 @@
   "Typed.second": "Data Science",
   "Typed.third": "DevOps",
 
-  "Pitch.tekst": "We love working with data",
+  "Pitch.tekst": "We love working with your data",
   "Checklist.punkt.et.fed": "Why",
   "Checklist.punkt.et": " We love to learn. We love to work with modern technologies. We love to work in diverse fields. Therefore we choose to be data science consultants. ",
   "Checklist.punkt.to.fed": "How",
-  "Checklist.punkt.to": "We provide data science consulting that helps you create efficient data-driven software. We design, implement, and integrate these solutions with your technology stack.",
+  "Checklist.punkt.to": "Together with you we organize, catalogue, and standardize your data and work out the oppertunities that your data holds. We then help you create efficient data-driven software and integrate the solutions with your technology stack.",
   "Checklist.punkt.tre.fed": "What",
-  "Checklist.punkt.tre": "We are a team of data scientists that specialize in artifical intelligence, full-stack development, and devops. How can we help you get advantages of your data with the newest technologies?",
+  "Checklist.punkt.tre": "We are a team of data scientists that specialize in machine learning, full-stack development, and devops. Want to find our what your data do for you?",
   "Checklist.button": "Get in touch",
 
-  "What.we.do.step.tekst.one": "We develop end-to-end artificial intelligence pipelines that solves real problems. Our data scientists can help you better use your data, improve your operations, and provide new services.",
-  "What.we.do.step.tekst.two": "We specialize in turning scientific research into real software. We have experience in many fields including, medical image processing, geoinformation systems (GIS), data mining, and data visualization.",
+  "What.we.do.step.tekst.one": "We develop end-to-end machine learning pipelines that help you use your data, improve your operations, and provide new services. For example, we help Scandinavian Highlands serve gigantic amounts of geological data to their customers, help Umeus turn their student dorms into smart buildings, and ....",
+  "What.we.do.step.tekst.two": "We specialize in turning scientific research into real software. For example, we help Novo Nordisk find drug molecules more efficiently by predicting which experiments to run, we help TetraPak use maintenance prediction to reduce downtime on production facilities, and we help Frederiksberg accelerate research by automating manual data analysis.",
   "What.we.do.step.tekst.three": "We can help you develop both on-premise and cloud-based DevOps architectures, continuous integration, and continuous deployment infrastrucure. We are experienced with monolithic-, microservice-, and serverless architectures.",
   "Trusted.by": "Trusted by",
   "Trusted.and.more": "and more!",
