@@ -28,18 +28,18 @@
   "Typed.second": "Data Science",
   "Typed.third": "DevOps",
 
-  "Pitch.tekst": "We love working with your data",
+  "Pitch.tekst": "Our mission is to empower you to take advantage of your data",
   "Checklist.punkt.et.fed": "Why",
-  "Checklist.punkt.et": " We love to learn. We love to work with modern technologies. We love to work in diverse fields. Therefore we choose to be data science consultants. ",
+  "Checklist.punkt.et": "We have the mindset of a startup and the framework of an enterprise. We love to learn and work with modern technologies. Therefore we choose to be data science consultants.",
   "Checklist.punkt.to.fed": "How",
-  "Checklist.punkt.to": "Together with you we organize, catalogue, and standardize your data and work out the oppertunities that your data holds. We then help you create efficient data-driven software and integrate the solutions with your technology stack.",
+  "Checklist.punkt.to": "We provide data science consulting that empowers you to develop data-driven products. We actively mitigate stress, employ flexible work hours, look after each other and organize our work to match your organization. Together with you we design, implement, and integrate cutting-edge software with your technology stack.",
   "Checklist.punkt.tre.fed": "What",
-  "Checklist.punkt.tre": "We are a team of data scientists that specialize in machine learning, full-stack development, and devops. Want to find our what your data do for you?",
+  "Checklist.punkt.tre": "We are a team of data scientists that specialize in machine learning, full-stack development, and devops. We are the subcontractor that big consulting firms use to turn data science into robust commercial software. Want to find our what your data do for you?",
   "Checklist.button": "Get in touch",
 
-  "What.we.do.step.tekst.one": "We develop end-to-end machine learning pipelines that help you use your data, improve your operations, and provide new services. For example, we help Scandinavian Highlands serve gigantic amounts of geological data to their customers, help Umeus turn their student dorms into smart buildings, and ....",
-  "What.we.do.step.tekst.two": "We specialize in turning scientific research into real software. For example, we help Novo Nordisk find drug molecules more efficiently by predicting which experiments to run, we help TetraPak use maintenance prediction to reduce downtime on production facilities, and we help Frederiksberg accelerate research by automating manual data analysis.",
-  "What.we.do.step.tekst.three": "We can help you develop both on-premise and cloud-based DevOps architectures, continuous integration, and continuous deployment infrastrucure. We are experienced with monolithic-, microservice-, and serverless architectures.",
+  "What.we.do.step.tekst.one": "We develop end-to-end machine learning pipelines that help you take advantage of your data, improve your operations, and provide new services. For example, we help Scandinavian Highlands analyse and serve gigantic amounts of geological data to their customers and help Umeus turn their student dorms into smart buildings.",
+  "What.we.do.step.tekst.two": "We specialize in turning scientific research into real software. For example, we help Novo Nordisk find drug molecules more efficiently by predicting which experiments to run, we help TetraPak use predictive maintenance to maximize production throughtput, and we help Frederiksberg Hospital accelerate research by automating data analysis.",
+  "What.we.do.step.tekst.three": "We help you develop both on-premise and cloud-based DevOps architectures, continuous integration, and continuous deployment infrastrucure. We use agile development processes, open source software and keep ourselves up-to-date on the latest technology. This benefits your bottom line, flexibility, and freedom and allows you to take advantage of long-term viable software while staying on the cutting-edge of technology.",
   "Trusted.by": "Trusted by",
   "Trusted.and.more": "and more!",
 
@@ -62,7 +62,7 @@
 
   "Whatwedo.Headline": "We turn data science into robust commercial software",
 
-  "Bodyleft.first": "Uncovering deep insights from artificial intelligence requires a very particular set of skills. We show our customers how they can develop world-class predictive modeling capabilities and take artificial intelligence into their own hands",
+  "Bodyleft.first": "Uncovering deep insights from artificial intelligence requires a very particular set of skills. We show our customers how they can develop world-class predictive models and take artificial intelligence into their own hands,",
   "Headlineleft.first": "Artifical Intelligence",
   "Keywordsleft.first": "Artificial Intelligence, Machine Learning, Deep Learning, Data Science, Computer Vision, Natural Language Processing",
   "Headlineright.first": "Scientific Programming",
@@ -81,12 +81,12 @@
 
   "We.are.your": "We are Bytes & Brains",
   "Om.os.one.gold": "We are",
-  "Om.os.one": "a team of data scientists and software engineers on a mission to unleash the full potential of data. We take pride in concise code, clear documentation, and our ability to transfer knowledge to our customer's technical teams. ",
+  "Om.os.one": "a team of data scientists and software engineers on a mission to empower our customers to take advantage of their data. We take pride in concise code, clear documentation, and our ability to transfer knowledge to our customer's technical teams. ",
   "Om.os.two.gold": "We love",
   "Om.os.two": "working at Bytes & Brains because we built a productive, pleasant, and fun working environment. Our desire to define our own company culture was the main motivation for founding our company.",
   "Om.os.three.gold": "We learn",
-  "Om.os.three": "about new technologies in data science everyday. We contribute to several open source projects including TensorFlow (Google), h3 (Uber), ITK (Kitware), and eigen. Learning is fun and our desire work in a learning environment was the second motivation for founding our company.",
-  "Om.os.four.gold": "We like",
+  "Om.os.three": "about new technologies in data science everyday. We contribute to several open source projects including TensorFlow (Google), h3 (Uber), ITK (Kitware), and eigen. Our desire work in a learning environment was another major motivation for founding our company.",
+  "Om.os.four.gold": "We want",
   "Om.os.four": "to work in diverse fields. Therefore we choose to be consultants. How can we help you?",
 
   "Kasper.titel": "Chief Executive Officer",
