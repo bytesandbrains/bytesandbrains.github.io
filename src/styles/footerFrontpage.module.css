@@ -1,24 +1,22 @@
 .wrapper {
-  background-color: var(--primary-color);
   height: 100%;
   z-index: 4;
   position: relative;
 }
 .wrapper::before {
-  transform: skewY(3deg);
-  transform-origin: left top;
+  transform: skewY(-10deg);
+  transform-origin: center;
   position: absolute;
-  box-shadow: var(--stack-before);
   top: -20%;
   z-index: -1;
   content: '';
   width: 100%;
-  height: 100%;
+  height: 90%;
   background-color: var(--primary-color);
 }
+
 .inner {
-  margin-left: 20%;
-  padding-top: 1%;
+  text-align: center;
   z-index: 4;
   color: var(--secondary-color);
 }
@@ -27,13 +25,23 @@
 }
 
 .wrapperContactInfo {
-  margin-left: -20%;
   background-color: var(--primary-color);
   height: 100%;
   z-index: 4;
   text-align: center;
   padding-top: 4em;
-  padding-bottom: 4em;
+  padding-bottom: 9em;
+}
+.button {
+  background: var(--tertiary-color);
+  color: white;
+  border-radius: 1.5em;
+  padding: 0.75em;
+  font-size: 0.7em;
+}
+.button:hover {
+  background: var(--quinary-color);
+  color: white;
 }
 @media screen and (max-width: 1200px) {
   .inner {

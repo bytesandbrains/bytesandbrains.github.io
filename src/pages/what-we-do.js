@@ -6,9 +6,7 @@ import Layout from '../components/layout.js'
 import SEO from '../components/seo.js'
 import { OutboundLink } from 'gatsby-plugin-gtag'
 import Footer from '../components/footer.js'
-
-import Carousel, { Dots } from '@brainhubeu/react-carousel'
-import '@brainhubeu/react-carousel/lib/style.css'
+import BrainTalk from '../images/BrainTalk_WithBrain.png'
 
 import commonStyles from '../styles/common.module.css'
 import styles from '../styles/what-we-do.module.css'
@@ -136,34 +134,6 @@ function WhatWeDo(props) {
             </h1>
           </div>
 
-          <div className={styles.projects}>
-            <div className={styles.project_outer}>
-              <Carousel autoPlay={0} stopAutoPlayOnHover>
-                <div className={styles.project_inner}>
-                  <p className={styles.project_text}>
-                    <span className={styles.case_text}>CASE:</span> This video
-                    illustrates how Bytes & Brains a company to fill in missing
-                    samples in a geographical data set. The orange dots are
-                    generated from existing data. Part of the work is open
-                    source and can be found on{' '}
-                    <OutboundLink href="https://github.com/bytesandbrains/h3-pg">
-                      GitHub
-                    </OutboundLink>
-                    . Get in touch and let's talk about what we can do for you!
-                  </p>
-                  <video
-                    className={styles.project_video}
-                    autoPlay={true}
-                    muted
-                    controls
-                    src={withPrefix('video/Creeking.mov')}
-                    type="video/mp4"
-                    width="100%"
-                  />
-                </div>
-              </Carousel>
-            </div>
-          </div>
           <div>
             {whatWeDoBody.map((whatWeDoBody, index) => (
               <WhatWeDoData
@@ -174,14 +144,15 @@ function WhatWeDo(props) {
             ))}
           </div>
           <div className={styles.talks}>
-            <h1>
+            <img src={BrainTalk} className={styles.talksBrainTalk} />
+            <h2 className={styles.talksText}>
               {' '}
               <FormattedMessage id="What.we.do.talks.headline" />
-            </h1>
-            <p>
+            </h2>
+            <p className={styles.talksText}>
               <FormattedMessage id="What.we.do.talks.text" />
             </p>
-            <div className={styles.button}>
+            <div className={styles.button + ' ' + styles.talksText}>
               <Link className={commonStyles.button} to="/contact">
                 <FormattedMessage id="What.we.do.contact.button" />
               </Link>

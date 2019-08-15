@@ -1,4 +1,4 @@
-@mixin interpolate(
+@mixin fluid-type(
   $properties,
   $min-screen,
   $max-screen,
@@ -35,9 +35,9 @@
   $a: ($max-value - $min-value) / ($max-screen - $min-screen);
   $b: $min-value - $a * $min-screen;
 
-  $sign: "+";
+  $sign: '+';
   @if ($b < 0) {
-    $sign: "-";
+    $sign: '-';
     $b: abs($b);
   }
   @return calc(#{$a * 100}vw #{$sign} #{$b});

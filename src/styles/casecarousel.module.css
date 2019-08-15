@@ -1,0 +1,23 @@
+.casesCarouselWrapper {
+  height: 80vh;
+  color: var(--primary-color);
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.casesCarouselCostumer {
+  font-weight: bold;
+}
+.casesCarouselText {
+  text-align: center;
+}
+.casesCarouselHeadline {
+  text-align: center;
+}
+.arrowIcon {
+  height: 5em;
+  width: 5em;
+  color: var(--tertiary-color);
+}
+.arrowIcon:hover {
+  color: var(--quinary-color);
+}

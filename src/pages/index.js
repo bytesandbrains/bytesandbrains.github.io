@@ -1,13 +1,18 @@
 /* global gtag */
 
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'gatsby'
 import { useIntl, FormattedMessage } from '../intl/main.js'
 import useTyped from '../hooks/typed.js'
 import FooterFrontpage from '../components/footerFrontpage.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo.js'
-import { MdCamera, MdGraphicEq, MdMemory } from 'react-icons/md'
+import { MdFavoriteBorder, MdLink, MdLightbulbOutline } from 'react-icons/md'
+import Carousel, { Dots } from '@brainhubeu/react-carousel'
+import '@brainhubeu/react-carousel/lib/style.css'
+import Costumercarousel from '../components/costumercarousel.js'
+import Casescarousel from '../components/casescarousel.js'
+import Testimonialcarousel from '../components/testimonialcarousel.js'
 
 import SplashImage3 from '../images/frontpage/ide.png'
 import SplashImage2 from '../images/frontpage/kraken.png'
@@ -63,10 +68,10 @@ const Home = props => {
               </h1>
             </div>
             <div className={styles.headlineText}>
-              <h2>
+              <h3>
                 <FormattedMessage id="Headline.tekst" />
                 <span ref={textRef} className={styles.typedText} />
-              </h2>
+              </h3>
             </div>
             <Link
               to="/what-we-do"
@@ -76,49 +81,34 @@ const Home = props => {
               <FormattedMessage id="Read.more.button.one" />
             </Link>
           </div>
+
+          <Costumercarousel />
+          <Testimonialcarousel />
         </div>
+
         <div className={styles.pitch}>
           <div className={styles.pitchText}>
-            <div>
-              <h2>
-                <FormattedMessage id="Pitch.tekst" />
-              </h2>
-              <div className={styles.checklist}>
-                <p className={styles.checklistPoint}>
-                  <b>
-                    <FormattedMessage id="Checklist.punkt.et.fed" />
-                  </b>{' '}
-                </p>
-                <p className={styles.checklistText}>
-                  <FormattedMessage id="Checklist.punkt.et" />
-                </p>
-                <p className={styles.checklistPoint}>
-                  <b>
-                    <FormattedMessage id="Checklist.punkt.to.fed" />
-                  </b>{' '}
-                </p>
-                <p className={styles.checklistText}>
-                  <FormattedMessage id="Checklist.punkt.to" />
-                </p>
-                <p className={styles.checklistPoint}>
-                  <b>
-                    <FormattedMessage id="Checklist.punkt.tre.fed" />
-                  </b>{' '}
-                </p>
-                <p className={styles.checklistText}>
-                  <FormattedMessage id="Checklist.punkt.tre" />
-                </p>
-              </div>
-
-              <Link
-                to="/contact"
-                className={styles.checklistButton}
-                onClick={handleFreeConsultation}
-              >
-                <FormattedMessage id="Checklist.button" />
-              </Link>
+            <h2>
+              <FormattedMessage id="Pitch.tekst" />
+            </h2>
+            <div className={styles.mission}>
+              <p className={styles.missionText}>
+                We are a small consulting company, that aims to be among the
+                best within data science, machine learning, AI, and DevOps. We
+                turn data science into robust commercial software and help our
+                clients transform their data into a competitive edge.
+              </p>
             </div>
+
+            <Link
+              to="/contact"
+              className={styles.button}
+              onClick={handleFreeConsultation}
+            >
+              <FormattedMessage id="Checklist.button" />
+            </Link>
           </div>
+
           <div className={styles.splashPictures}>
             <img
               alt="Data visualisation"
@@ -138,11 +128,16 @@ const Home = props => {
           </div>
         </div>
         <div className={styles.whatWeDoWrapper}>
+          <h2 className={styles.whatWeDoHeadline}>
+            Three things you need to know about us
+          </h2>
           <div className={styles.whatWeDo}>
             <article className={styles.whatWeDoStepWrapper}>
               <div className={styles.whatWeDoStep}>
-                <MdCamera className={styles.icon} />
-                <h2 className={styles.whatWeDoStepHeadline}>Data Science</h2>
+                <MdFavoriteBorder className={styles.icon} />
+                <h2 className={styles.whatWeDoStepHeadline}>
+                  We do what we love
+                </h2>
                 <p className={styles.whatWeDoStepText}>
                   <FormattedMessage id="What.we.do.step.tekst.one" />
                 </p>
@@ -150,9 +145,9 @@ const Home = props => {
             </article>
             <article className={styles.whatWeDoStepWrapper}>
               <div className={styles.whatWeDoStep}>
-                <MdMemory className={styles.icon} />
+                <MdLightbulbOutline className={styles.icon} />
                 <h2 className={styles.whatWeDoStepHeadline}>
-                  Process Optimization
+                  We share our knowledge
                 </h2>
                 <p className={styles.whatWeDoStepText}>
                   <FormattedMessage id="What.we.do.step.tekst.two" />
@@ -161,8 +156,10 @@ const Home = props => {
             </article>
             <article className={styles.whatWeDoStepWrapper}>
               <div className={styles.whatWeDoStep}>
-                <MdGraphicEq className={styles.icon} />
-                <h2 className={styles.whatWeDoStepHeadline}>DevOps</h2>
+                <MdLink className={styles.icon} />
+                <h2 className={styles.whatWeDoStepHeadline}>
+                  We work directly with you
+                </h2>
                 <p className={styles.whatWeDoStepText}>
                   <FormattedMessage id="What.we.do.step.tekst.three" />
                 </p>
@@ -170,80 +167,7 @@ const Home = props => {
             </article>
           </div>
         </div>
-        <div className={styles.trustedWrapper}>
-          <div className={styles.trusted}>
-            <div className={styles.trustedHeader}>
-              <h2 className={styles.trushedHeaderText}>
-                {' '}
-                <FormattedMessage id="Trusted.by" />{' '}
-              </h2>
-            </div>
-            <div className={styles.trustedFirms}>
-              <a href="https://www.tetrapak.com/">
-                <img
-                  alt="TetraPak logo"
-                  className={styles.logoTetraPak}
-                  src={TetraPak}
-                />
-              </a>
-              <img
-                alt="Scandinavian Highlands logo"
-                className={styles.logoScandi}
-                src={Scandi}
-              />
-              <img
-                alt="Bispebjerg og Frederiksberg Hospital logo"
-                className={styles.logoFrederiksberg}
-                src={Frederiksberg}
-              />
-              <img
-                alt="Odense Universitetshospital"
-                className={styles.logoOdense}
-                src={Odense}
-              />
-              <img
-                alt="Roskilde Sygehus"
-                className={styles.logoRoskilde}
-                src={Roskilde}
-              />
-            </div>
-            <p className={styles.trustedAndMore}>
-              <FormattedMessage id="Trusted.and.more" />
-            </p>
-          </div>
-        </div>
-        {/*<div className="Customers-wrapper">
-          <div className="Customers">
-            <div className="Customers-headline">
-              <h1> Customer cases</h1>
-            </div>
-          </div>
-        </div>*/}
-        <div className={styles.hiringWrapper}>
-          <div className={styles.hiring}>
-            <h1>
-              <FormattedMessage id="We.are.hiring" />
-            </h1>
-            <h3>
-              <FormattedMessage id="Employee.one" />
-            </h3>
-            <p>
-              <FormattedMessage id="Employee.one.description" />
-            </p>
-            <h3>
-              <FormattedMessage id="Employee.two" />
-            </h3>
-            <p>
-              <FormattedMessage id="Employee.two.description" />
-            </p>
-            <h3>
-              <FormattedMessage id="Employee.three" />
-            </h3>
-            <p>
-              <FormattedMessage id="Employee.three.description" />
-            </p>
-          </div>
-        </div>
+        <Casescarousel />
         <FooterFrontpage />
       </div>
     </Layout>

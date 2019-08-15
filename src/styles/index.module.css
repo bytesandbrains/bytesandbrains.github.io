@@ -1,19 +1,31 @@
 .headlineWrapper {
   position: relative;
-  background-color: var(--primary-color);
   color: var(--white-color);
   width: 100%;
-  height: 25rem;
-  z-index: 2;
+  height: 100vh;
+  z-index: 1;
+  background-color: var(--primary-color);
+}
+
+.headlineWrapper::after {
+  transform: skewY(-10deg);
+  transform-origin: center;
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  bottom: -15vh;
+  background-color: var(--primary-color);
+  z-index: -1;
 }
 .headline {
   padding-top: 200px;
-  margin: 0px 0% 15% 10%;
+  margin: 0px 0% 10% 10%;
 }
 .headlineOverskrift {
   margin-left: 0;
   margin-right: 0;
-  font-size: 1.5em;
 }
 .headlineText {
   margin-bottom: 1.5em;
@@ -21,120 +33,126 @@
 .typedText {
   color: var(--gold-color);
 }
-.headlineWrapper::after {
-  transform: skewY(-3deg);
-  transform-origin: left top;
-  position: absolute;
-  box-shadow: var(--stack-after);
-  top: -1.5rem;
-  z-index: -1;
-  content: '';
-  width: 100%;
-  height: 145%;
-  background-color: var(--primary-color);
-}
+
 .pitchText {
-  z-index: -4;
   position: relative;
-  padding-bottom: 7.5rem;
-  margin-left: 10%;
-  flex-grow: 2;
-  display: flex;
-  padding-top: 18rem;
+  margin-left: 5%;
+  padding-top: 75%;
   color: var(--primary-color);
+  margin-bottom: 5%;
 }
 .pitch {
-  z-index: 2;
+  z-index: 1;
   position: relative;
-  padding-bottom: 15px;
+  height: 92vh;
   display: grid;
-  grid-template-columns: 50% 50%;
-  overflow: hidden;
+  grid-template-columns: 40% 60%;
 }
-.checklist {
+
+.mission {
   padding-bottom: 15px;
   padding-top: 15px;
   display: grid;
-  grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   grid-column-gap: 15px;
   align-content: start;
 }
-.checklistPoint {
-  grid-column-start: 1;
-  margin: 0;
-}
-.checklistText {
+.missionText {
   margin: 0 0 1em 0;
 }
 
-.checklist a {
-  color: var(--primary-color);
-  border-bottom: 1px dashed #abb3c1;
-}
-.button,
-.checklistButton {
-  border: 3px solid var(--tertiary-color);
+.button {
+  background: var(--tertiary-color);
+  color: white;
   border-radius: 1.5em;
   padding: 0.75em;
 }
 .button:hover {
-  border: 5px solid var(--tertiary-color);
+  background: var(--quinary-color);
+
+  color: white;
 }
-.checklistButton {
-  font-weight: 400;
-  border: 3px solid var(--tertiary-color);
-}
-.checklistButton:hover {
-  border: 5px solid var(--tertiary-color);
-}
+
 .splashPictures {
   grid-column-start: 2;
-  margin-left: 2em;
+  position: relative;
+  overflow: hidden;
 }
+.splash {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  transform: var(--picture-transformSkew);
+}
+.Picture1 {
+  z-index: 99;
+  overflow: hidden;
+  top: 160px;
+  left: 120px;
+}
+.Picture2 {
+  z-index: 98;
+  overflow: hidden;
+  top: 220px;
+  left: 80px;
+}
+.Picture3 {
+  z-index: 97;
+  overflow: hidden;
+  top: 280px;
+  left: 60px;
+}
+
 .whatWeDoWrapper {
   position: relative;
   z-index: 1;
-  margin-top: 10px;
+  margin-top: 20%;
+  padding-top: 5%;
 }
-.whatWeDoWrapper::after {
-  transform: skewY(-3deg);
+.whatWeDoWrapper::before {
+  transform: skewY(10deg);
   transform-origin: center;
   /*box-shadow: 0 4px 0 var(--dark-grey-color), 0 -4px 0 var(--dark-grey-color);*/
   content: '';
   position: absolute;
-  top: -17%;
+  top: -15%;
   left: 0;
   width: 100%;
-  height: 140%;
+  height: 50%;
+  background: rgb(232, 234, 239);
+  background: linear-gradient(
+    345deg,
+    rgba(43, 122, 120, 1) 40%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  z-index: -4;
+}
+
+.whatWeDoWrapper::after {
+  transform: skewY(-10deg);
+  transform-origin: center;
+  /*box-shadow: 0 4px 0 var(--dark-grey-color), 0 -4px 0 var(--dark-grey-color);*/
+  content: '';
+  position: absolute;
+  top: -15%;
+  left: 0;
+  width: 100%;
+  height: 110%;
   background-color: var(--primary-color);
   z-index: -1;
-  box-shadow: var(--stack-after), var(--stack-before);
 }
-@media screen and (min-width: 1700px) {
-  .whatWeDoWrapper:after {
-    top: -40%;
-    height: 165%;
-  }
-}
-@media screen and (min-width: 2200px) {
-  .whatWeDoWrapper:after {
-    transform: skewY(-3deg);
-    transform-origin: center;
-    top: -40%;
-    height: 170%;
-  }
-}
+
 .whatWeDo {
   z-index: 1;
   display: flex;
-  flex-direction: var(--flex-test);
   padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 5%;
+  padding-bottom: 10em;
   padding-right: 5%;
 }
-
+.whatWeDoHeadline {
+  text-align: center;
+  padding-bottom: 50px;
+}
 .whatWeDoStepWrapper {
   width: 33.3333%;
   margin-left: 2em;
@@ -143,132 +161,26 @@
   display: grid;
   grid-template-columns: auto auto;
   position: relative;
-  align-items: center;
   width: 100%;
 }
 .whatWeDoStepHeadline {
   margin: 0;
-  color: var(--tertiary-color);
+  color: var(--senary-color);
 }
 .whatWeDoStepText {
   grid-column: 2;
 }
-.trustedWrapper {
-  position: relative;
-  z-index: 3;
-}
-.trustedWrapper::before {
-  transform: skewY(-3deg);
-  transform-origin: left top;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  top: 45%;
-  left: 0;
-  background-color: var(--white-color);
-}
-@media screen and (min-width: 2200px) {
-  .trustedWrapper::before {
-    transform: skewY(-3deg);
-  }
-}
-.trusted {
-  margin: auto 5%;
-  padding-top: 12%;
-  margin-top: -1%;
-}
-.trustedHeader {
-  color: var(--primary-color);
-  font-size: 30px;
-}
-.trustedHeaderText {
-  font-weight: 300;
-}
-.trustedFirms {
-  color: var(--secondary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto -1%;
-}
-.logoTetraPak,
-.logoScandi,
-.logoFrederiksberg,
-.logoOdense,
-.logoRoskilde {
-  margin: 15px;
-}
-.logoScandi {
-  padding: 15px;
-  padding-top: 20px;
-  background-color: white;
-}
-.logoFrederiksberg {
-  background-color: white;
-}
-.trustedAndMore {
-  font-size: 24px;
-  text-align: right;
-  color: var(--primary-color);
-  padding-top: 30px;
-}
-.customersWrapper {
-  background-color: var(--secondary-color);
-}
-.customersHeadline {
-  margin-left: 10%;
-  padding-top: 10%;
-  color: var(--primary-color);
-}
 
-.hiringWrapper {
-  position: relative;
-  height: 100%;
-  z-index: 1;
-  color: var(--primary-color);
-  text-align: right;
-  padding-right: 20%;
-  line-height: 2em;
-}
-.hiring {
-  margin-left: 10%;
-  padding-top: 13%;
-  padding-bottom: 10%;
-}
-.hiring p {
-  color: var(--primary-color);
-}
 /*icons*/
 .icon {
   color: var(--gold-color);
   padding: 0.5rem;
   font-size: 3em;
   margin-right: 0.8rem;
-  border: 3px solid var(--gold-color);
+  border: 3px solid var(--senary-color);
   border-radius: 50%;
 }
 /*Billeder*/
-.splash {
-  position: absolute;
-  transform: var(--picture-transformSkew);
-  width: 60%;
-}
-.Picture1 {
-  z-index: 104;
-  margin-left: 12%;
-  top: 5%;
-}
-.Picture2 {
-  z-index: 103;
-  margin-left: 6%;
-  top: 15%;
-}
-.Picture3 {
-  z-index: 102;
-  top: 25%;
-}
 
 .trustedFirms > * {
   flex: 1;
@@ -280,189 +192,6 @@
 
 /*media query*/
 
-@media screen and (min-width: 1600px) {
-  .splash {
-    position: absolute;
-    transform: var(--picture-transformSkew);
-    width: 55%;
-  }
-}
-@media screen and (min-width: 1700px) {
-  .splash {
-    position: absolute;
-    transform: var(--picture-transformSkew);
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1800px) {
-  .splash {
-    position: absolute;
-    transform: var(--picture-transformSkew);
-    width: 45%;
-  }
-}
-/*Over 2000px*/
-@media screen and (min-width: 2000px) {
-  .splash {
-    position: absolute;
-    transform: var(--picture-transformSkew);
-    width: 45%;
-  }
-}
-@media screen and (min-width: 2200px) {
-  .splash {
-    position: absolute;
-    transform: perspective(60em) rotateY(40deg) rotateX(40deg);
-    width: 50%;
-  }
-  .Picture1 {
-    z-index: 104;
-    margin-left: 10%;
-    top: -6%;
-  }
-  .Picture2 {
-    z-index: 103;
-    margin-left: 5%;
-    top: -4%;
-  }
-  .Picture3 {
-    margin-left: 0%;
-    z-index: 102;
-    top: -2%;
-  }
-}
-@media screen and (min-width: 2400px) {
-  .pitch {
-    margin-left: 5%;
-  }
-}
-@media screen and (min-width: 2700px) {
-  .pitch {
-    max-width: 2400px;
-    overflow: visible;
-  }
-  .splash {
-    width: 48%;
-  }
-}
 /*ipad*/
-@media screen and (max-width: 800px) {
-  .headlineWrapper:after {
-    height: 130%;
-  }
-  .pitchText {
-    padding-right: 20%;
-    padding-top: 8em;
-    padding-bottom: 12.5rem;
-  }
-  .pitch {
-    grid-template-columns: auto;
-    overflow: hidden;
-  }
-  .splashPictures {
-    grid-column-start: 1;
-  }
-  .splash {
-    position: absolute;
-    transform: var(--picture-transformSkew);
-    width: 50%;
-  }
-  .Picture1 {
-    z-index: 104;
-    margin-left: 50%;
-    top: 64%;
-  }
-  .Picture2 {
-    z-index: 103;
-    margin-left: 40%;
-    top: 67%;
-  }
-  .Picture3 {
-    margin-left: 30%;
-    z-index: 102;
-    top: 70%;
-  }
-  .whatWeDoStepWrapper {
-    width: auto;
-    margin-bottom: 5%;
-    margin-left: auto;
-  }
-
-  .whatWeDoWrapper:after {
-    height: 110%;
-    top: -10%;
-  }
-  .trustedFirms {
-    flex-wrap: wrap;
-  }
-  .trustedWrapper:before {
-    height: auto;
-  }
-  .hiringWrapper {
-    padding-right: 10%;
-  }
-  .hiring h3 {
-    margin-top: 15px;
-    font-weight: 400;
-  }
-}
 
 /*telefon*/
-@media screen and (max-width: 600px) {
-  /*Headline - after header - before pitch*/
-  .headlineWrapper {
-    height: 20em;
-  }
-  .headlineWrapper:after {
-    height: 130%;
-  }
-  .headline {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-top: 100px;
-  }
-  .headlineOverskrift {
-    font-size: 1em;
-  }
-  .pitch {
-    grid-template-columns: auto;
-    overflow: hidden;
-    grid-template-rows: auto auto;
-  }
-
-  .splash {
-    display: none;
-  }
-  /*pitch*/
-  .computer {
-    display: none;
-  }
-  .pitchText {
-    padding-right: 10%;
-    padding-bottom: 20%;
-  }
-  .whatWeDo {
-    padding-top: 0em;
-  }
-  .whatWeDoWrapper:before {
-    top: -10%;
-  }
-  .whatWeDoWrapper:after {
-    height: 120%;
-    top: -10%;
-  }
-  .trusted {
-    padding-top: 0;
-    margin-top: 30%;
-  }
-  .trustedWrapper:before {
-    height: auto;
-  }
-  .hiring {
-    padding-bottom: 22%;
-  }
-  .footer {
-    margin-left: 0px;
-    text-align: center;
-  }
-}

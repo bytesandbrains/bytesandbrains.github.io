@@ -9,6 +9,12 @@
   font-weight: 300 !important;
   padding-bottom: 2%;
 }
+a {
+  color: inherit;
+}
+a:hover {
+  color: var(--quinary-color);
+}
 
 .outer p {
   color: var(--white-color);

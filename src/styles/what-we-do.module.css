@@ -154,11 +154,27 @@
   justify-items: end;
 }
 .talks {
-  margin-left: 25%;
-  margin-right: 25%;
+  display: grid;
+  grid-template-columns: 10% auto auto;
+  grid-template-rows: auto auto auto;
+  padding-left: 10%;
+  padding-right: 20%;
+  text-align: left;
 }
 .button {
-  padding-top: 5em;
+  padding-top: 2em;
+}
+.talksText {
+  grid-column: 2;
+  margin: 0;
+}
+
+.talksBrainTalk {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  width: 10em;
+  margin-left: 2em;
+  transform: rotate(25deg);
 }
 /*media query*/
 /*Ipad*/

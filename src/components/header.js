@@ -53,8 +53,16 @@ export default () => {
               <FormattedMessage id="Header.whoweare" />
             </Link>
             <Link
-              to="/contact"
+              to="/cases"
               className={styles.linksHeader}
+              id="cases"
+              onClick={toggleBurgerMenu}
+            >
+              <FormattedMessage id="Header.cases" />
+            </Link>
+            <Link
+              to="/contact"
+              className={styles.button}
               id="contact"
               onClick={toggleBurgerMenu}
             >

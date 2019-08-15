@@ -15,6 +15,18 @@ const Contact = props => {
       event_label: 'send_contact_form',
     })
   }
+  function gtagPhoneForm() {
+    gtag('event', 'click_phonenumber_form', {
+      event_category: 'Contact form',
+      event_label: 'click_phone_number',
+    })
+  }
+  function gtagMailForm() {
+    gtag('event', 'click_mail_form', {
+      event_category: 'Contact form',
+      event_label: 'click_mail',
+    })
+  }
   return (
     <Layout>
       <SEO
@@ -29,7 +41,14 @@ const Contact = props => {
               <FormattedMessage id="Contact.formular.headline" />
             </h1>
             <p className={styles.contactInfomation}>
-              <FormattedMessage id="Contact.formular.contact.info" />
+              Phone:{' '}
+              <a href="tel:004542670301" onClick={gtagPhoneForm}>
+                +45 42 67 03 01
+              </a>{' '}
+              – Email:{' '}
+              <a href="mailto:hello@bytesandbrains.com" onClick={gtagMailForm}>
+                hello@bytesandbrains.com
+              </a>
             </p>
             <p>
               <FormattedMessage id="Contact.formular.text" />
