@@ -8,6 +8,7 @@ import Footer from '../components/footer.js'
 import styles from '../styles/cases.module.css'
 import ContactBlock from '../components/contact-block.js'
 import Vladimir from '../videos/vladimir.webm'
+import TetraPakVideo from '../videos/TetraPakCase_Test1.mp4'
 
 const Cases = props => {
   const intl = useIntl()
@@ -42,7 +43,7 @@ const Cases = props => {
             whenever needed.
           </p>
           <video width="100%" autoPlay controls className={styles.casesMedia}>
-            <source src={Vladimir} type="video/webm" />
+            <source src={TetraPakVideo} type="video/mp4" />
           </video>
         </div>
         <div className={styles.customerCase}>
