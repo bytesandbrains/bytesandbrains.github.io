@@ -17,6 +17,9 @@ import Testimonialcarousel from '../components/testimonialcarousel.js'
 import SplashImage3 from '../images/frontpage/ide.png'
 import SplashImage2 from '../images/frontpage/kraken.png'
 import SplashImage1 from '../images/frontpage/visualization.png'
+import SplashImage32 from '../images/frontpage/ide.webp'
+import SplashImage22 from '../images/frontpage/kraken.webp'
+import SplashImage12 from '../images/frontpage/visualization.webp'
 import Frederiksberg from '../images/logos/FrederiksbergLogo.png'
 import Roskilde from '../images/logos/RoskildeSygehus.png'
 import TetraPak from '../images/logos/TetraPak.png'
@@ -81,9 +84,23 @@ const Home = props => {
               <FormattedMessage id="Read.more.button.one" />
             </Link>
           </div>
+          <div>
+            <p className={styles.textUnderHeadline}>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
 
           <Costumercarousel />
-          <Testimonialcarousel />
+          {/*<Testimonialcarousel />*/}
         </div>
 
         <div className={styles.pitch}>
@@ -110,21 +127,31 @@ const Home = props => {
           </div>
 
           <div className={styles.splashPictures}>
-            <img
-              alt="Data visualisation"
-              className={styles.splash + ' ' + styles.Picture1}
-              src={SplashImage1}
-            />
-            <img
-              alt="Data visualisation"
-              className={styles.splash + ' ' + styles.Picture2}
-              src={SplashImage2}
-            />
-            <img
-              alt="Data visualisation"
-              className={styles.splash + ' ' + styles.Picture3}
-              src={SplashImage3}
-            />
+            <picture>
+              <source type="image/webp" srcSet={SplashImage12} />
+              <img
+                alt="Data visualisation"
+                className={styles.splash + ' ' + styles.Picture1}
+                src={SplashImage1}
+              />
+            </picture>
+
+            <picture>
+              <source type="image/webp" srcSet={SplashImage22} />
+              <img
+                alt="Data visualisation"
+                className={styles.splash + ' ' + styles.Picture2}
+                src={SplashImage2}
+              />
+            </picture>
+            <picture>
+              <source type="image/webp" srcSet={SplashImage32} />
+              <img
+                alt="Data visualisation"
+                className={styles.splash + ' ' + styles.Picture3}
+                src={SplashImage3}
+              />
+            </picture>
           </div>
         </div>
         <div className={styles.whatWeDoWrapper}>
@@ -167,7 +194,7 @@ const Home = props => {
             </article>
           </div>
         </div>
-        <Casescarousel />
+        {/*<Casescarousel />*/}
         <FooterFrontpage />
       </div>
     </Layout>

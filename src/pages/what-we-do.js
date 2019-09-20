@@ -132,6 +132,19 @@ function WhatWeDo(props) {
             <h1 className={styles.headline_weTransform}>
               <FormattedMessage id="Whatwedo.Headline" />
             </h1>
+            <h4>
+              We use agile development processes, open source software and keep
+              ourselves up-to-date on the latest technology. This benefits your
+              bottom line, flexibility, and freedom, and allows you to take
+              advantage of long-term sustainable software while staying on the
+              cutting-edge of technology.
+            </h4>
+            <h4>
+              Working with us means getting complete solutions. We help our
+              customers all the way through the process of taking advantage of
+              their data, and we provide end-to-end data science services and
+              support our customers in delivering data-driven applications.
+            </h4>
           </div>
 
           <div>

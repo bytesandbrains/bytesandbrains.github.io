@@ -62,7 +62,7 @@ export default () => {
             </Link>
             <Link
               to="/contact"
-              className={styles.button}
+              className={styles.button + ' ' + styles.linksHeader}
               id="contact"
               onClick={toggleBurgerMenu}
             >

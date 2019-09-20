@@ -14,11 +14,19 @@ function Person(props) {
   const name = props.name
   const title = props.titel
   const face = props.face
+  const face2 = props.face2
   const text = props.text
   const contactemail = props.contactemail
   return (
     <div className={styles.person}>
-      <img alt="Portrait of employee" className={styles.portrait} src={face} />
+      <picture>
+        <source type="image/webp" srcSet={face2} />
+        <img
+          alt="Portrait of employee"
+          className={styles.portrait}
+          src={face}
+        />
+      </picture>
       <h2 className={styles.name}>{name}</h2>
       <h6 className={styles.title}>
         <FormattedMessage id={title} />

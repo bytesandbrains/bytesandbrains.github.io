@@ -65,12 +65,12 @@
 
   "Whatwedo.Headline": "We turn data science into robust commercial software",
 
-  "Bodyleft.first": "Uncovering deep insights from artificial intelligence requires a very particular set of skills. We show our customers how they can develop world-class predictive models and take artificial intelligence into their own hands,",
+  "Bodyleft.first": "We develop artificial intelligence algorithms that are tailored to your data. From data management, model building, and software development to large-scale deployment, performance optimization, and knowledge sharing we assist your team in making a real impact on your business.",
   "Headlineleft.first": "Artifical Intelligence",
   "Keywordsleft.first": "Artificial Intelligence, Machine Learning, Deep Learning, Data Science, Computer Vision, Natural Language Processing",
-  "Headlineright.first": "Scientific Programming",
+  "Headlineright.first": "Research and development",
   "Keywordsright.first": "Data Science, Geospatial Information Systems, Medical Image Processing",
-  "Bodyright.first": "We help our customers turn research into to robust, commercial software. We collaborate with researchers and regularly contribute to source projects including TensorFlow (Google), h3 (Uber), eigen, and ITK (Kitware).",
+  "Bodyright.first": "We specialize in turning scientific research software into real-world enterprise software. We have experience with developing new algorithms and with tailoring state-of-the-art algorithms to our clients needs. We collaborate with researchers and contribute to multiple open source projects e.g. TensorFlow, Eigen, and h3.",
   "Headlineleft.second": "DevOps",
   "Keywordsleft.second": "Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP), Continuous Integration, Continuous Delivery, Microservices, Serverless Computing, Infrastructure-as-code, Agile Development",
   "Bodyleft.second": "We help our customers build reliable, scalable, and efficient infrastructure to stay ahead of the competition. Having worked with both traditional and DevOps-enabled organizations, we understand both cultures and what it takes to transition from one to the other over time.",

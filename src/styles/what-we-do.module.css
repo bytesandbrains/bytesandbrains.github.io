@@ -4,6 +4,9 @@
   color: var(--white-color);
   text-align: center;
 }
+.outer h4 {
+  margin: 5% 10% 0 10%;
+}
 .outer p {
   margin: 0;
 }

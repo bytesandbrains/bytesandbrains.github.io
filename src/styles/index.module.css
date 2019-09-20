@@ -33,7 +33,9 @@
 .typedText {
   color: var(--gold-color);
 }
-
+.textUnderHeadline {
+  margin: 0px 10% 10% 10%;
+}
 .pitchText {
   position: relative;
   margin-left: 5%;

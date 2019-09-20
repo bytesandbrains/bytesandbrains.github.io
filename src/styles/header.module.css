@@ -82,6 +82,7 @@ a {
   .linksHeader {
     display: none;
   }
+
   .linksHeader + .linksHeader {
     margin-left: 74%;
   }
@@ -111,6 +112,12 @@ a {
     margin-bottom: 2px;
     background-color: var(--primary-color);
     color: var(--senary-color);
+  }
+  .button:hover {
+    background: var(--primary-color);
+  }
+  .linksHeader:hover {
+    color: white;
   }
   .responsiveSideLinks {
     display: block;
