@@ -84,23 +84,9 @@ const Home = props => {
               <FormattedMessage id="Read.more.button.one" />
             </Link>
           </div>
-          <div>
-            <p className={styles.textUnderHeadline}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
-          </div>
 
           <Costumercarousel />
-          {/*<Testimonialcarousel />*/}
+          {<Testimonialcarousel />}
         </div>
 
         <div className={styles.pitch}>
@@ -110,10 +96,8 @@ const Home = props => {
             </h2>
             <div className={styles.mission}>
               <p className={styles.missionText}>
-                We are a small consulting company, that aims to be among the
-                best within data science, machine learning, AI, and DevOps. We
-                turn data science into robust commercial software and help our
-                clients transform their data into a competitive edge.
+                We are data scientists and software engineers that 
+                help our customers transform their data into competitive advantages.
               </p>
             </div>
 

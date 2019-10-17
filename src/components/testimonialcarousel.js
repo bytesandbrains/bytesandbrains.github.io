@@ -7,46 +7,16 @@ export default props => {
     <div className={styles.projects}>
       <div className={styles.project_outer}>
         <Carousel
-          autoPlay={6000}
+          autoPlay={10000}
           stopAutoPlayOnHover
           clickToChange
           infinite
-          slidesPerPage={1}
+          slidesPerPage={2}
         >
           <p className={styles.project_text}>
-            Tetra Pak:{' '}
+            - {' '}
             <span className={styles.testimonial}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
-              pretium quam vulputate dignissim suspendisse. Metus dictum at
-              tempor commodo ullamcorper a lacus.
-            </span>{' '}
-          </p>
-          <p className={styles.project_text}>
-            Tetra Pak:{' '}
-            <span className={styles.testimonial}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
-              pretium quam vulputate dignissim suspendisse. Metus dictum at
-              tempor commodo ullamcorper a lacus.
-            </span>{' '}
-          </p>
-          <p className={styles.project_text}>
-            Tetra Pak:{' '}
-            <span className={styles.testimonial}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
-              pretium quam vulputate dignissim suspendisse. Metus dictum at
-              tempor commodo ullamcorper a lacus.
-            </span>{' '}
-          </p>
-          <p className={styles.project_text}>
-            Tetra Pak:{' '}
-            <span className={styles.testimonial}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
-              pretium quam vulputate dignissim suspendisse. Metus dictum at
-              tempor commodo ullamcorper a lacus.
+              "Working with Bytes & Brains was like a breath of fresh air. They are very pleasant people and they quickly and translated our business challenge into a functional algorithm in 3 months.", <i>Astrid Nielsen</i>, <i>Data Science Manager</i>, <i>TetraPak</i>
             </span>{' '}
           </p>
         </Carousel>

@@ -50,6 +50,7 @@ a {
   white-space: nowrap;
   padding: 0.55em;
   padding-left: 1em;
+  font-weight: 600;
 }
 
 .button {
