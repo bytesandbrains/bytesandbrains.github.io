@@ -2,3 +2,8 @@
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.project_text {
+  padding: 5%;
+  background-color: rgba(0, 0, 0, 0.07);
+}
