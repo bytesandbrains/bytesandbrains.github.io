@@ -1,9 +1,10 @@
 .projects {
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 2%;
 }
 
 .project_text {
-  padding: 5%;
-  background-color: rgba(0, 0, 0, 0.07);
+  padding: 2%;
+  padding-bottom: 0;
 }

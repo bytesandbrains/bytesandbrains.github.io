@@ -15,13 +15,13 @@
   left: 0;
   width: 100%;
   height: 40%;
-  bottom: -15vh;
+  bottom: -17vh;
   background-color: var(--primary-color);
   z-index: -1;
 }
 .headline {
   padding-top: 200px;
-  margin: 0px 0% 10% 10%;
+  margin: 0px 0% 0% 10%;
 }
 .headlineOverskrift {
   margin-left: 0;
@@ -39,7 +39,7 @@
 .pitchText {
   position: relative;
   margin-left: 5%;
-  padding-top: 75%;
+  padding-top: 50%;
   color: var(--primary-color);
   margin-bottom: 5%;
 }
@@ -68,7 +68,6 @@
   color: white;
   border-radius: 1.5em;
   padding: 0.75em;
-  font-weight: 600;
 }
 .button:hover {
   background: var(--quinary-color);
@@ -89,19 +88,19 @@
 .Picture1 {
   z-index: 99;
   overflow: hidden;
-  top: 160px;
+  top: 40px;
   left: 120px;
 }
 .Picture2 {
   z-index: 98;
   overflow: hidden;
-  top: 220px;
+  top: 100px;
   left: 80px;
 }
 .Picture3 {
   z-index: 97;
   overflow: hidden;
-  top: 280px;
+  top: 160px;
   left: 60px;
 }
 

@@ -84,9 +84,8 @@ const Home = props => {
               <FormattedMessage id="Read.more.button.one" />
             </Link>
           </div>
-
-          <Costumercarousel />
           {<Testimonialcarousel />}
+          <Costumercarousel />
         </div>
 
         <div className={styles.pitch}>
@@ -96,8 +95,8 @@ const Home = props => {
             </h2>
             <div className={styles.mission}>
               <p className={styles.missionText}>
-                We are data scientists and software engineers that 
-                help our customers transform their data into competitive advantages.
+                We are data scientists and software engineers that help our
+                customers transform their data into competitive advantages.
               </p>
             </div>
 
