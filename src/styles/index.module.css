@@ -46,7 +46,7 @@
 .pitch {
   z-index: 1;
   position: relative;
-  height: 92vh;
+  /*height: 92vh;*/
   display: grid;
   grid-template-columns: var(--grid-template-columns-big);
 }
