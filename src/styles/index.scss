@@ -16,9 +16,17 @@
   --picture-transformSkew: perspective(60em) rotateY(40deg) rotateX(40deg);
 }
 
+:root {
+  --display-big: block;
+  --grid-template-columns-big: 40% 60%;
+  --flex-equal-width: 25%;
+}
 @media screen and (max-width: 800px) {
   :root {
     --flex-test: column;
+    --display-big: none;
+    --grid-template-columns-big: 100%;
+    --flex-equal-width: 100%;
   }
 }
 $min-width: 14px;

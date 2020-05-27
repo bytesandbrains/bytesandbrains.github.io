@@ -21,7 +21,6 @@
 .customerText {
   margin: 2em 2em auto auto;
   grid-column: 1 / span 2;
-  columns: 2 200px;
 }
 .casesMedia {
   grid-column: 1 / span 2;

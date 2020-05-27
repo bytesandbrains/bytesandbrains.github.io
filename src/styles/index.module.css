@@ -2,13 +2,13 @@
   position: relative;
   color: var(--white-color);
   width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
   z-index: 1;
   background-color: var(--primary-color);
 }
 
 .headlineWrapper::after {
-  transform: skewY(-10deg);
+  transform: skewY(-5deg);
   transform-origin: center;
   content: '';
   position: absolute;
@@ -48,7 +48,7 @@
   position: relative;
   height: 92vh;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: var(--grid-template-columns-big);
 }
 
 .mission {
@@ -75,9 +75,9 @@
 }
 
 .splashPictures {
+  display: var(--display-big);
   grid-column-start: 2;
   position: relative;
-  overflow: hidden;
 }
 .splash {
   overflow: hidden;
@@ -111,7 +111,7 @@
   padding-top: 5%;
 }
 .whatWeDoWrapper::before {
-  transform: skewY(10deg);
+  transform: skewY(5deg);
   transform-origin: center;
   /*box-shadow: 0 4px 0 var(--dark-grey-color), 0 -4px 0 var(--dark-grey-color);*/
   content: '';
@@ -120,7 +120,7 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background: rgb(232, 234, 239);
+ 
   background: linear-gradient(
     345deg,
     rgba(43, 122, 120, 1) 40%,
@@ -130,7 +130,7 @@
 }
 
 .whatWeDoWrapper::after {
-  transform: skewY(-10deg);
+  transform: skewY(-5deg);
   transform-origin: center;
   /*box-shadow: 0 4px 0 var(--dark-grey-color), 0 -4px 0 var(--dark-grey-color);*/
   content: '';
@@ -146,6 +146,7 @@
 .whatWeDo {
   z-index: 1;
   display: flex;
+  flex-wrap: wrap;
   padding-top: 1em;
   padding-bottom: 10em;
   padding-right: 5%;
@@ -155,7 +156,8 @@
   padding-bottom: 50px;
 }
 .whatWeDoStepWrapper {
-  width: 33.3333%;
+  flex-grow: 1;
+  width: var(--flex-equal-width);
   margin-left: 2em;
 }
 .whatWeDoStep {
@@ -170,6 +172,7 @@
 }
 .whatWeDoStepText {
   grid-column: 2;
+  margin-bottom: 1em;
 }
 
 /*icons*/

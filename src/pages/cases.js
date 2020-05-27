@@ -70,9 +70,7 @@ const Cases = props => {
             and Bytes & Brains are still helping Novo improve their software
             whenever needed.
           </p>
-          <video width="100%" autoPlay controls className={styles.casesMedia}>
-            <source src={Vladimir} type="video/webm" />
-          </video>
+         
         </div>
         <div className={styles.customerCase}>
           <h2 className={styles.customerHeadline}>Frederiksberg Hospital </h2>
@@ -96,9 +94,7 @@ const Cases = props => {
             a previously unknown phenomenon that the original inventors of the
             new sequences were unaware of.
           </p>
-          <video width="100%" autoPlay controls className={styles.casesMedia}>
-            <source src={Vladimir} type="video/webm" />
-          </video>
+         
         </div>
         <div className={styles.customerCase}>
           <h2 className={styles.customerHeadline}>
@@ -124,9 +120,7 @@ const Cases = props => {
             software is used by MDs and other medical staff daily and
             contributes to Danish health science research.
           </p>
-          <video width="100%" autoPlay controls className={styles.casesMedia}>
-            <source src={Vladimir} type="video/webm" />
-          </video>
+          
         </div>
       </div>
       <ContactBlock />

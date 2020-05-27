@@ -4,7 +4,7 @@
   position: relative;
 }
 .wrapper::before {
-  transform: skewY(-10deg);
+  transform: skewY(-5deg);
   transform-origin: center;
   position: absolute;
   top: -20%;

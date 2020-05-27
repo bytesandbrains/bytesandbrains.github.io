@@ -23,14 +23,18 @@ import UmeusWhite from '../images/costumerlogos/Umeus_Logo_White.png'
 
 import styles from '../styles/costumercarousel.module.css'
 
+import useMediaQuery from '../hooks/media'
+
 export default () => {
   const [logoUrl, setLogoUrl] = useState(RegionSyddanmarkWhite)
+
+  const isMobile = useMediaQuery('(max-width: 800px)')
 
   return (
     <div className={styles.trustedWrapper}>
       <div className={styles.trusted}>
         <div className={styles.trustedFirms}>
-          <Carousel slidesPerPage={4} infinite autoPlay={3000}>
+          <Carousel slidesPerPage={isMobile ? 1 : 4} infinite autoPlay={3000}>
             <HoverImg
               nameClass={styles.costumerlogo}
               attributeText="Region Syddanmark"
