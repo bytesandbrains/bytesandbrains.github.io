@@ -133,11 +133,10 @@ function WhatWeDo(props) {
               <FormattedMessage id="Whatwedo.Headline" />
             </h1>
             <h4>
-              We develop data-driven applications and end-to-end 
-              data science services. Working with us allows 
-              you to take advantage of maintainable software while 
-              staying on the cutting-edge of technology - and improve
-              your bottom line.
+              We develop data-driven applications and end-to-end data science
+              services. Working with us allows you to take advantage of
+              maintainable software while staying on the cutting-edge of
+              technology - and improve your bottom line.
             </h4>
           </div>
 
@@ -159,7 +158,15 @@ function WhatWeDo(props) {
             <p className={styles.talksText}>
               <FormattedMessage id="What.we.do.talks.text" />
             </p>
-            <div className={styles.button + ' ' + styles.talksText}>
+            <div
+              className={
+                styles.button +
+                ' ' +
+                styles.talksText +
+                ' ' +
+                styles.talksButton
+              }
+            >
               <Link className={commonStyles.button} to="/contact">
                 <FormattedMessage id="What.we.do.contact.button" />
               </Link>

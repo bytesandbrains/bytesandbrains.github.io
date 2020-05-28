@@ -188,6 +188,21 @@
   .textRight {
     padding-right: 10%;
   }
+  .talks {
+    grid-template-columns: auto;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .talksText {
+    grid-column: 1 / span 3;
+  }
+  .talksButton {
+    grid-column: 1 / span 2;
+  }
+  .talksBrainTalk {
+    width: 3em;
+    grid-row: 3;
+  }
 }
 /*telefon*/
 @media screen and (max-width: 500px) {

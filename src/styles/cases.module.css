@@ -19,7 +19,7 @@
   grid-column: 1 / span 2;
 }
 .customerText {
-  margin: 2em 2em auto auto;
+  margin: var(--cases-text-margin);
   grid-column: 1 / span 2;
 }
 .casesMedia {
@@ -27,4 +27,10 @@
   grid-row: 2;
   align-self: center;
   margin-top: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .casesWrapper {
+    padding-top: 20%;
+  }
 }

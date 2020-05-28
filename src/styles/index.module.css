@@ -15,12 +15,12 @@
   left: 0;
   width: 100%;
   height: 40%;
-  bottom: -17vh;
+  bottom: var(--headline-wrapper-bottom);
   background-color: var(--primary-color);
   z-index: -1;
 }
 .headline {
-  padding-top: 200px;
+  padding-top: var(--headline-padding);
   margin: 0px 0% 0% 10%;
 }
 .headlineOverskrift {
@@ -39,7 +39,7 @@
 .pitchText {
   position: relative;
   margin-left: 5%;
-  padding-top: 50%;
+  padding-top: var(--pitch-padding-top);
   color: var(--primary-color);
   margin-bottom: 5%;
 }
@@ -60,7 +60,7 @@
   align-content: start;
 }
 .missionText {
-  margin: 0 0 1em 0;
+  margin: var(--mission-bottom-margin);
 }
 
 .button {
@@ -108,7 +108,7 @@
   position: relative;
   z-index: 1;
   margin-top: 20%;
-  padding-top: 5%;
+  padding-top: var(--what-we-do-wrapper-paddint);
 }
 .whatWeDoWrapper::before {
   transform: skewY(5deg);
@@ -120,7 +120,7 @@
   left: 0;
   width: 100%;
   height: 50%;
- 
+
   background: linear-gradient(
     345deg,
     rgba(43, 122, 120, 1) 40%,
@@ -153,7 +153,7 @@
 }
 .whatWeDoHeadline {
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: var(--what-we-do-headline-padding);
 }
 .whatWeDoStepWrapper {
   flex-grow: 1;
@@ -169,10 +169,11 @@
 .whatWeDoStepHeadline {
   margin: 0;
   color: var(--senary-color);
+  padding-top: var(--what-we-step-headline-padding);
 }
 .whatWeDoStepText {
   grid-column: 2;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 /*icons*/
