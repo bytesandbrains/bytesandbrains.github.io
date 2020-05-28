@@ -30,6 +30,10 @@
 .headlineText {
   margin-bottom: 1.5em;
 }
+.breakTyped {
+  display: var(--break-typed);
+}
+
 .typedText {
   color: var(--gold-color);
 }

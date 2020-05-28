@@ -73,6 +73,7 @@ const Home = props => {
             <div className={styles.headlineText}>
               <h3>
                 <FormattedMessage id="Headline.tekst" />
+                <br className={styles.breakTyped} />
                 <span ref={textRef} className={styles.typedText} />
               </h3>
             </div>
