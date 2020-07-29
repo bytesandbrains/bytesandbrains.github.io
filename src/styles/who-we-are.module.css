@@ -133,3 +133,52 @@
     grid-template-columns: auto auto auto auto;
   }
 }
+
+.whatWeDoWrapper {
+  background: var(--primary-color);
+  padding-bottom: 3em;
+  padding-top: 3em;
+}
+
+
+.icon {
+  color: var(--gold-color);
+  padding: 0.5rem;
+  font-size: 3em;
+  margin-right: 0.8rem;
+  border: 3px solid var(--senary-color);
+  border-radius: 50%;
+}
+
+
+.whatWeDo {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3em;
+  padding-right: 5%;
+}
+.whatWeDoHeadline {
+  text-align: center;
+  padding-bottom: var(--what-we-do-headline-padding);
+}
+.whatWeDoStepWrapper {
+  flex-grow: 1;
+  width: var(--flex-equal-width);
+  margin-left: 2em;
+}
+.whatWeDoStep {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  width: 100%;
+}
+.whatWeDoStepHeadline {
+  margin: 0;
+  color: var(--senary-color);
+  padding-top: var(--what-we-step-headline-padding);
+}
+.whatWeDoStepText {
+  grid-column: 2;
+  margin-bottom: 2em;
+}

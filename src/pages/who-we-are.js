@@ -6,6 +6,7 @@ import ContactBlock from '../components/contact-block.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo.js'
 import Footer from '../components/footer.js'
+import { MdFavoriteBorder, MdLink, MdLightbulbOutline } from 'react-icons/md'
 
 import styles from '../styles/who-we-are.module.css'
 
@@ -85,6 +86,47 @@ const WhoWeAre = props => {
             <FormattedMessage id="Om.os.four" />
           </h2>
         </div>
+        <div className={styles.whatWeDoWrapper}>
+          <h2 className={styles.whatWeDoHeadline}>
+            Three things you need to know about us
+          </h2>
+          <div className={styles.whatWeDo}>
+            <article className={styles.whatWeDoStepWrapper}>
+              <div className={styles.whatWeDoStep}>
+                <MdFavoriteBorder className={styles.icon} />
+                <h2 className={styles.whatWeDoStepHeadline}>
+                  We do what we love
+                </h2>
+                <p className={styles.whatWeDoStepText}>
+                  <FormattedMessage id="What.we.do.step.tekst.one" />
+                </p>
+              </div>
+            </article>
+            <article className={styles.whatWeDoStepWrapper}>
+              <div className={styles.whatWeDoStep}>
+                <MdLightbulbOutline className={styles.icon} />
+                <h2 className={styles.whatWeDoStepHeadline}>
+                  We share our knowledge
+                </h2>
+                <p className={styles.whatWeDoStepText}>
+                  <FormattedMessage id="What.we.do.step.tekst.two" />
+                </p>
+              </div>
+            </article>
+            <article className={styles.whatWeDoStepWrapper}>
+              <div className={styles.whatWeDoStep}>
+                <MdLink className={styles.icon} />
+                <h2 className={styles.whatWeDoStepHeadline}>
+                  We work directly with you
+                </h2>
+                <p className={styles.whatWeDoStepText}>
+                  <FormattedMessage id="What.we.do.step.tekst.three" />
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
 
         <div className={styles.descriptions}>
           {/* Looper over personer og viser dem */}

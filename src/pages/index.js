@@ -140,17 +140,17 @@ const Home = props => {
         </div>
         <div className={styles.whatWeDoWrapper}>
           <h2 className={styles.whatWeDoHeadline}>
-            Three things you need to know about us
+            Three things we are really good at
           </h2>
           <div className={styles.whatWeDo}>
             <article className={styles.whatWeDoStepWrapper}>
               <div className={styles.whatWeDoStep}>
                 <MdFavoriteBorder className={styles.icon} />
                 <h2 className={styles.whatWeDoStepHeadline}>
-                  We do what we love
+                  Data Science & Artificial Intelligence
                 </h2>
                 <p className={styles.whatWeDoStepText}>
-                  <FormattedMessage id="What.we.do.step.tekst.one" />
+                  <FormattedMessage id="Three.things.we.are.good.at.one" />
                 </p>
               </div>
             </article>
@@ -158,10 +158,10 @@ const Home = props => {
               <div className={styles.whatWeDoStep}>
                 <MdLightbulbOutline className={styles.icon} />
                 <h2 className={styles.whatWeDoStepHeadline}>
-                  We share our knowledge
+                  Full-stack Development
                 </h2>
                 <p className={styles.whatWeDoStepText}>
-                  <FormattedMessage id="What.we.do.step.tekst.two" />
+                  <FormattedMessage id="Three.things.we.are.good.at.two" />
                 </p>
               </div>
             </article>
@@ -169,10 +169,10 @@ const Home = props => {
               <div className={styles.whatWeDoStep}>
                 <MdLink className={styles.icon} />
                 <h2 className={styles.whatWeDoStepHeadline}>
-                  We work directly with you
+                  M&A Technical Due Diligence
                 </h2>
                 <p className={styles.whatWeDoStepText}>
-                  <FormattedMessage id="What.we.do.step.tekst.three" />
+                  <FormattedMessage id="Three.things.we.are.good.at.three" />
                 </p>
               </div>
             </article>

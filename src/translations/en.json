@@ -46,6 +46,10 @@
   "Trusted.by": "Trusted by",
   "Trusted.and.more": "and more!",
 
+  "Three.things.we.are.good.at.one": "We provide innovative data analytics, machine learning, and managed services solutions for some of the biggest companies in north europe. We deliver state-of-the-art applications with a unique ability to rapidly develop and scale enterprise deployments. We use the best open source machine learning frameworks to deliver Computer Vision, Natual Language Processing, and data processing prototypes in as little as a few weeks.",
+  "Three.things.we.are.good.at.two": "We’re a trusted team that have provided amazing backend, web, and mobile app development services. We work hand in hand with your development team to integrate development and QA processes into your team's daily workflow. Our knowledge across languages, technologies and platforms make us the ideal partner your next outsourced project.",
+  "Three.things.we.are.good.at.three": "We focus on uncovering risk that can impact the go/no-go decision while keeping remediation costs at a minimum. We use a 6-dimensional methodology to review code quality, team skills, licensing, documentation, development processess, software- and infrastructure architecture. We communicate the findings in a clear and understandable manner. Our broad set of skills ensure that can review all aspects of a software product and M&A Technical Due Diligence typically costs a fraction of the legal fees.",
+
   "We.are.hiring": "We're hiring!",
   "Employee.one": "Scientific Programmer",
   "Employee.one.description": "Full-time - Copenhagen - Medical Image Processing, PACS integration, HL7 integration, C++, Python",
@@ -79,7 +83,7 @@
   "Bodyright.second": "From back-end to front-end, we help our customers deliver data-driven applications as web serverices and iOS/Android apps. We work closely with our customers to quickly from development to production.",
 
   "What.we.do.talks.headline": "Do you need an engaging speaker?",
-  "What.we.do.talks.text": "Through our work we keep up with the latest developments in technology. Get in touch and let’s find out if we can do a talk that fits your audience.",
+  "What.we.do.talks.text": "Through our work we keep up with the latest developments in technology. Get in touch and find out if we can do a talk that fits your audience.",
   "What.we.do.contact.button": "Get in touch",
 
   "We.are.your": "We are Bytes & Brains",
@@ -114,7 +118,7 @@
   "Zacharias.text": "Zacharias is more or less superhuman when it comes to codes and productiveness, and we love to watch him work at multiple screens at the same time. He is a real code wiz and he masters C/C++, Python, Java and a lot of modern JS technologies such as React, Redux and GraphQL. He has build many large software projects from scratch including content management systems, geospatial information systems and data visualisation tools. Zacharias is very social and a big fan of boardgames and beer nights. Zacharias has a BSc in Computer Science.",
   "Zacharias.email": "zacharias@bytesandbrains.com",
   "Oliver.titel": "Data Scientist",
-  "Oliver.text": "Oliver is responsible for keeping our solutions scalable and easy to hand over. He sim-ply loves the creativity involved in implementing new APIs and libraries that save time and effort.Oliver is a real good guy, who makes quality coffee to his wife, even though he is not a coffee drinker himself, and often takes time to upgrade our lunch with homemade tuna salad and other good stuff. Oliver has specialized in data science, computer vision and machine automation. He has an MSc in Computer Science.",
+  "Oliver.text": "Oliver is responsible for keeping our solutions scalable and easy to hand over. He simply loves the creativity involved in implementing new APIs and libraries that save time and effort.Oliver is a real good guy, who makes quality coffee to his wife, even though he is not a coffee drinker himself, and often takes time to upgrade our lunch with homemade tuna salad and other good stuff. Oliver has specialized in data science, computer vision and machine automation. He has an MSc in Computer Science.",
   "Oliver.email": "oliver@bytesandbrains.com",
   "Axel.titel": "Student Assistant",
   "Axel.text": "Axel is our Student Assistant. We try to give him as many challenging assignments as possible, yet he always comes out on top. He is our rising star in full-stack development, Javascript/Node.js, Python, Java and Mario Kart (Nintendo 64, obviously). If left unattended, Axel will meticulously go through your code and tell you which algorithm and data structure you should have used. When Axel is not at the office he is playing football or getting smarter at the University of Copenhagen where he studies Computer Science",
